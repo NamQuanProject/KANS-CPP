@@ -37,27 +37,26 @@ KANLinearImpl::KANLinearImpl(
 
 
 void KANLinearImpl::reset_parameters() {
-    torch::nn::init::kaiming_uniform_({base_weight}, std::sqrt(5) * scale_base);
+    torch::nn::init::kaiming_uniform_(base_weight, std::sqrt(5) * scale_base);
 
     torch::NoGradGuard no_grad;
+
     auto noise = (torch::rand({grid_size + 1, in_features, out_features}) - 0.5) * scale_noise / grid_size;
-    
-    // Get x tensor for curve2coeff
-    auto x_for_coeff = grid.index({torch::indexing::Slice(spline_order, -spline_order)});
-    
-    // Print shapes for debugging
-    std::cout << "x shape: " << x_for_coeff.sizes() << std::endl;
-    std::cout << "y shape: " << noise.sizes() << std::endl;
 
-    // Apply scaling factor to spline weights
-    double scale_factor = enable_standalone_scale_spline ? 1.0 : scale_spline;
-    spline_weight.copy_(scale_factor * curve2coeff(x_for_coeff, noise));
+    auto grid_t = grid.transpose(0, 1);
 
-    // Initialize spline scaler if enabled
+    auto sliced_grid = grid_t.index({torch::indexing::Slice(spline_order, -spline_order)});
+
+    spline_weight.copy_(
+        (enable_standalone_scale_spline ? 1.0 : scale_spline) * curve2coeff(sliced_grid, noise)
+    );
+
     if (enable_standalone_scale_spline) {
         torch::nn::init::kaiming_uniform_(spline_scaler, std::sqrt(5) * scale_spline);
     }
 }
+
+
 
 
 
@@ -78,18 +77,25 @@ torch::Tensor KANLinearImpl::b_splines(torch::Tensor x) {
 }
 
 torch::Tensor KANLinearImpl::curve2coeff(torch::Tensor x, torch::Tensor y) {
-   
-    
-    assert(x.dim() == 2 && x.size(1) == in_features);
-    std::cout << "curve2coeff: x shape: " << x.sizes() << ", y shape: " << y.sizes() << std::endl;
+    /*
+    Compute the coefficients of the curve that interpolates the given points.
 
-    assert(y.size(0) == x.size(0) && y.size(1) == in_features && y.size(2) == out_features);
-    auto A = b_splines(x).transpose(0, 1);
-    auto B = y.transpose(0, 1);
-    auto A_pinv = torch::pinverse(A);
-    auto solution = torch::matmul(A_pinv, B);
-    auto result = solution.permute({2, 0, 1});
+        Args:
+            x (torch.Tensor): Input tensor of shape (batch_size, in_features).
+            y (torch.Tensor): Output tensor of shape (batch_size, in_features, out_features).
+
+        Returns:
+            torch.Tensor: Coefficients tensor of shape (out_features, in_features, grid_size + spline_order).
+    */
+
+    torch::Tensor A = b_splines(x).transpose(0, 1);  // (in_features, batch_size, grid_size + spline_order)
+    torch::Tensor B = y.transpose(0, 1);  // (in_features, batch_size, out_features)
+
+    auto solution = torch::linalg::lstsq(A, B, /*rcond=*/c10::nullopt, /*driver=*/"gels");
+    torch::Tensor result = std::get<0>(solution).permute({2, 0, 1});  // (out_features, in_features, grid_size + spline_order)
+
     assert(result.size(0) == out_features && result.size(1) == in_features && result.size(2) == grid_size + spline_order);
+
     return result.contiguous();
 }
 
@@ -101,7 +107,7 @@ torch::Tensor KANLinearImpl::scaled_spline_weight() {
 }
 
 torch::Tensor KANLinearImpl::forward(torch::Tensor x) {
-    assert(x.size(-1) == in_features);
+    assert(x.dim() == 2 && x.size(1) == in_features);
     auto original_shape = x.sizes();
     x = x.view({-1, in_features});
 
@@ -115,33 +121,72 @@ torch::Tensor KANLinearImpl::forward(torch::Tensor x) {
 
 void KANLinearImpl::update_grid(torch::Tensor x, double margin) {
     assert(x.dim() == 2 && x.size(1) == in_features);
-    auto batch = x.size(0);
+    int64_t batch = x.size(0);
 
-    auto splines = b_splines(x).permute({1, 0, 2});
-    auto orig_coeff = scaled_spline_weight().permute({1, 2, 0});
-    auto unreduced_spline_output = torch::bmm(splines, orig_coeff).permute({1, 0, 2});
+    auto splines = b_splines(x);  // Compute B-splines
+    splines = splines.permute({1, 0, 2});  // Transpose for correct dimensions
 
-    auto x_sorted = std::get<0>(torch::sort(x, 0));
-    auto grid_adaptive = x_sorted.index_select(0, torch::linspace(0, batch - 1, grid_size + 1, torch::TensorOptions().dtype(torch::kInt64)));
+    auto orig_coeff = scaled_spline_weight();  // Get scaled spline weights
+    orig_coeff = orig_coeff.permute({1, 2, 0});  // Transpose for correct dimensions
 
+    auto unreduced_spline_output = torch::bmm(splines, orig_coeff);  // Compute spline output
+    unreduced_spline_output = unreduced_spline_output.permute({1, 0, 2});  // Transpose for correct dimensions
+
+    // Sort input to collect data distribution
+    auto sorted_result = torch::sort(x, 0);
+    auto x_sorted = std::get<0>(sorted_result);
+    
+    auto indices = torch::linspace(0, batch - 1, grid_size + 1, torch::TensorOptions().dtype(torch::kLong).device(x.device()));
+
+    // Select elements from x_sorted using indices
+    auto grid_adaptive = x_sorted.index_select(0, indices);
     auto uniform_step = (x_sorted[-1] - x_sorted[0] + 2 * margin) / grid_size;
-    auto grid_uniform = torch::arange(grid_size + 1, torch::TensorOptions().dtype(torch::kFloat32)).unsqueeze(1) * uniform_step + x_sorted[0] - margin;
+    auto grid_uniform = torch::arange(grid_size + 1, torch::TensorOptions().dtype(torch::kFloat32).device(x.device()))
+                        .unsqueeze(1)
+                        .mul(uniform_step)
+                        .add(x_sorted[0] - margin);
+    
+    grid = grid_eps * grid_uniform + (1 - grid_eps) * grid_adaptive;
 
-    auto grid = grid_eps * grid_uniform + (1 - grid_eps) * grid_adaptive;
-    grid = torch::cat({
-        grid.slice(0, 0, 1) - uniform_step * torch::arange(spline_order, 0, -1, torch::TensorOptions().device(x.device())).unsqueeze(1),
-        grid,
-        grid.slice(0, -1) + uniform_step * torch::arange(1, spline_order + 1, torch::TensorOptions().device(x.device())).unsqueeze(1)
-    }, 0);
+    auto lower_extension = grid.slice(0, 0, 1).clone() - uniform_step * torch::arange(spline_order, 0, -1, torch::TensorOptions().device(x.device())).unsqueeze(1);
+    auto upper_extension = grid.slice(0, -1).clone() + uniform_step * torch::arange(1, spline_order + 1, torch::TensorOptions().device(x.device())).unsqueeze(1);
 
-    this->grid.copy_(grid.transpose(0, 1));
-    spline_weight.copy_(curve2coeff(x, unreduced_spline_output));
+    grid = torch::concatenate({lower_extension, grid, upper_extension}, 0);
+    
+    auto cat_grid = grid.clone();
+    grid = cat_grid.transpose(0, 1).clone();
+
+    
+    auto coeff = curve2coeff(x, unreduced_spline_output);
+    spline_weight.data().copy_(coeff);
 }
 
+
+
 torch::Tensor KANLinearImpl::regularization_loss(double regularize_activation, double regularize_entropy) {
+    /*
+    Compute the regularization loss.
+
+        This is a dumb simulation of the original L1 regularization as stated in the
+        paper, since the original one requires computing absolutes and entropy from the
+        expanded (batch, in_features, out_features) intermediate tensor, which is hidden
+        behind the F.linear function if we want an memory efficient implementation.
+
+        The L1 regularization is now computed as mean absolute value of the spline
+        weights. The authors implementation also includes this term in addition to the
+        sample-based regularization.
+    */
+    
     auto l1_fake = spline_weight.abs().mean(-1);
+    
     auto regularization_loss_activation = l1_fake.sum();
+
     auto p = l1_fake / regularization_loss_activation;
+
     auto regularization_loss_entropy = -(p * p.log()).sum();
-    return regularize_activation * regularization_loss_activation + regularize_entropy * regularization_loss_entropy;
+
+    return (
+    regularize_activation * regularization_loss_activation 
+    + regularize_entropy * regularization_loss_entropy
+    );
 }

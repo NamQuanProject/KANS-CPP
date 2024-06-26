@@ -41,7 +41,7 @@ torch::Tensor KANImpl::forward(torch::Tensor x, bool update_grid) {
    for (auto& layer : layers) {
        if (update_grid) {
            layer->update_grid(x);
-       }
+        }
        x = layer->forward(x);
    }
    return x;
@@ -49,9 +49,9 @@ torch::Tensor KANImpl::forward(torch::Tensor x, bool update_grid) {
 
 
 torch::Tensor KANImpl::regularization_loss(double regularize_activation, double regularize_entropy) {
-   torch::Tensor loss = torch::zeros({1});
-   for (auto layer : layers) {
-       loss += layer->regularization_loss(regularize_activation, regularize_entropy);
-   }
-   return loss;
+    torch::Tensor loss = torch::zeros({1});
+    for (auto& layer : layers) {
+        loss += layer->regularization_loss(regularize_activation, regularize_entropy);
+    }
+    return loss;
 }
