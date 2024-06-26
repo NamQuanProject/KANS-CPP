@@ -10,7 +10,7 @@
 
 //     for (int i = 0; i < 10; ++i) {
 //         torch::Tensor loss, reg_loss;
-
+        
 //         auto closure = [&]() -> torch::Tensor {
 //             optimizer.zero_grad();
 //             auto x = torch::rand({1024, 2});
@@ -21,12 +21,14 @@
 //             auto v = x.index({torch::indexing::Slice(), 1});
 //             loss = torch::nn::functional::mse_loss(y.squeeze(-1), (u + v) / (1 + u * v));
 //             reg_loss = kan->regularization_loss(1, 0);
-//             (loss + 1e-5 * reg_loss).backward();
+//             (loss + 1e-5 * reg_loss).backward(/* retain_graph= */ true);
 //             return loss + reg_loss;
 //         };
+
 //         optimizer.step(closure);
-//         std::cout << "Epoch: " << i << ", mse_loss: " << loss.item<double>() << ", reg_loss: " << reg_loss.item<double>() << std::endl;
+//         std::cout << "Epoch: " << i << ", mse_loss: " << loss << ", reg_loss: " << reg_loss << std::endl;
 //     }
+    
 //     for (auto& layer : kan->layers) {
 //       std::cout << layer->spline_weight << std::endl;
 //     }
