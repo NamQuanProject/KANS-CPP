@@ -5428,8 +5428,12 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
   /Users/quannguyennam/Documents/Projects/KANS/KAN.cpp \
   /Users/quannguyennam/Documents/Projects/KANS/KAN.h \
   /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.cpp \
-  /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.h
+  /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.h \
+  /Users/quannguyennam/Documents/Projects/KANS/testKAN.cpp \
+  /Users/quannguyennam/Documents/Projects/KANS/testKAN.h
 
+
+/Users/quannguyennam/Documents/Projects/KANS/testKAN.h:
 
 /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.cpp:
 
@@ -12686,6 +12690,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_amp_foreach_non_finite_check_and_unscale.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_addmm_activation.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/testKAN.cpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_add_relu_native.h:
 

@@ -5425,5 +5425,7 @@ CMakeFiles/Kans.dir/main.cpp.o: \
   /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/version.h \
   /Users/quannguyennam/Documents/Projects/KANS/KAN.cpp \
   /Users/quannguyennam/Documents/Projects/KANS/KAN.h \
+  /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.h \
   /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.cpp \
-  /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.h
+  /Users/quannguyennam/Documents/Projects/KANS/testKAN.cpp \
+  /Users/quannguyennam/Documents/Projects/KANS/testKAN.h

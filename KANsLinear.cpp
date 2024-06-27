@@ -1,6 +1,4 @@
 #include "KANsLinear.h"
-#include <torch/torch.h>
-#include <cmath>
 
 KANLinearImpl::KANLinearImpl(
     int64_t in_features,

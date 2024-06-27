@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <torch/torch.h>
+#include <cmath>
 
 class KANLinearImpl : public torch::nn::Module {
 public:
@@ -43,5 +44,4 @@ public:
     torch::Tensor spline_weight;
     torch::Tensor spline_scaler;
 };
-
 TORCH_MODULE(KANLinear);
