@@ -2,74 +2,108 @@
 // #include <iostream>
 // #include <vector>
 // #include "KAN.cpp"
+// #include "KANsLinear.cpp"
+// #include "testKAN.cpp"
 
-// void test_mul() {
-//     std::vector<int64_t> layers_hidden = {2, 2, 1};
-//     KAN kan(layers_hidden);
-//     auto optimizer = torch::optim::LBFGS(kan->parameters(), torch::optim::LBFGSOptions(1).max_iter(100));
-
-//     for (int i = 0; i < 10; ++i) {
-//         torch::Tensor loss, reg_loss;
-        
-//         auto closure = [&]() -> torch::Tensor {
-//             optimizer.zero_grad();
-//             auto x = torch::rand({1024, 2});
-//             auto y = kan->forward(x, (i % 20 == 0));
-            
-//             assert(y.sizes() == std::vector<int64_t>({1024, 1}));
-//             auto u = x.index({torch::indexing::Slice(), 0});
-//             auto v = x.index({torch::indexing::Slice(), 1});
-//             loss = torch::nn::functional::mse_loss(y.squeeze(-1), (u + v) / (1 + u * v));
-//             reg_loss = kan->regularization_loss(1, 0);
-//             (loss + 1e-5 * reg_loss).backward(/* retain_graph= */ true);
-//             return loss + reg_loss;
-//         };
-
-//         optimizer.step(closure);
-//         std::cout << "Epoch: " << i << ", mse_loss: " << loss << ", reg_loss: " << reg_loss << std::endl;
-//     }
+// torch::Tensor add_padding(torch::Tensor matrix, std::pair<int, int> padding) {
+//     int n = matrix.size(0);
+//     int m = matrix.size(1);
+//     int r = padding.first;
+//     int c = padding.second;
     
-//     for (auto& layer : kan->layers) {
-//       std::cout << layer->spline_weight << std::endl;
+//     auto padded_matrix = torch::zeros({n + 2 * r, m + 2 * c}, matrix.options());
+//     padded_matrix.slice(0, r, r + n).slice(1, c, c + m).copy_(matrix);
+    
+//     return padded_matrix;
+// }
+
+// std::vector<int64_t> calc_out_dims(torch::Tensor matrix,
+//                                    int64_t kernel_side,
+//                                    std::pair<int64_t, int64_t> stride,
+//                                    std::pair<int64_t, int64_t> dilation,
+//                                    std::pair<int64_t, int64_t> padding) {
+//     int64_t batch_size = matrix.size(0);
+//     int64_t n_channels = matrix.size(1);
+//     int64_t n = matrix.size(2);
+//     int64_t m = matrix.size(3);
+
+//     int64_t h_out = std::floor((n + 2 * padding.first - kernel_side - (kernel_side - 1) * (dilation.first - 1)) / stride.first) + 1;
+//     int64_t w_out = std::floor((m + 2 * padding.second - kernel_side - (kernel_side - 1) * (dilation.second - 1)) / stride.second) + 1;
+
+//     std::vector<int64_t> out_dims = {h_out, w_out, batch_size, n_channels};
+//     return out_dims;
+// }
+
+
+// std::tuple<torch::Tensor, torch::Tensor, std::vector<int64_t>, int64_t, int64_t>
+// _check_params(torch::Tensor matrix, torch::Tensor kernel,
+//               std::pair<int64_t, int64_t> stride, std::pair<int64_t, int64_t> dilation,
+//               std::pair<int64_t, int64_t> padding) {
+//     TORCH_CHECK(matrix.ndimension() == 2, "Input matrix must be 2D");
+//     TORCH_CHECK(kernel.ndimension() == 2, "Kernel must be 2D");
+
+//     int64_t n = matrix.size(0);
+//     int64_t m = matrix.size(1);
+//     int64_t k1 = kernel.size(0);
+//     int64_t k2 = kernel.size(1);
+
+//     TORCH_CHECK(k1 % 2 == 1 && k2 % 2 == 1, "Kernel size must be odd");
+
+//     int64_t h_out = std::floor((n + 2 * padding.first - k1 - (k1 - 1) * (dilation.first - 1)) / stride.first) + 1;
+//     int64_t w_out = std::floor((m + 2 * padding.second - k2 - (k2 - 1) * (dilation.second - 1)) / stride.second) + 1;
+
+//     TORCH_CHECK(h_out > 0 && w_out > 0, "Invalid convolution parameters");
+
+//     return std::make_tuple(matrix, kernel, std::vector<int64_t>{k1, k2}, h_out, w_out);
+// }
+
+
+// torch::Tensor conv2d(torch::Tensor matrix, torch::Tensor kernel,
+//                      std::pair<int64_t, int64_t> stride = {1, 1},
+//                      std::pair<int64_t, int64_t> dilation = {1, 1},
+//                      std::pair<int64_t, int64_t> padding = {0, 0}) {
+//     auto [matrix_pad, kernel_, k, h_out, w_out] = _check_params(matrix, kernel, stride, dilation, padding);
+//     matrix_pad = add_padding(matrix_pad, {k[0] / 2, k[1] / 2});
+
+//     torch::Tensor matrix_out = torch::zeros({h_out, w_out}, matrix.options());
+
+//     for (int64_t i = 0; i < h_out; ++i) {
+//         int64_t center_x = k[0] / 2 + i * stride.first;
+//         for (int64_t j = 0; j < w_out; ++j) {
+//             int64_t center_y = k[1] / 2 + j * stride.second;
+//             auto submatrix = matrix_pad.index({torch::indexing::Slice(center_x - k[0] / 2, center_x + k[0] / 2 + 1),
+//                                                torch::indexing::Slice(center_y - k[1] / 2, center_y + k[1] / 2 + 1)});
+//             matrix_out[i][j] = (submatrix * kernel).sum();
+//         }
 //     }
+
+//     return matrix_out;
 // }
 
+
+// torch::Tensor apply_filter_to_image(torch::Tensor image, torch::Tensor kernel) {
+//     int64_t channels = image.size(2);
+//     std::vector<torch::Tensor> output_channels;
+
+//     for (int64_t z = 0; z < channels; ++z) {
+//         auto filtered_channel = conv2d(image.index({torch::indexing::Slice(), torch::indexing::Slice(), z}),
+//                                        kernel, {1, 1}, {1, 1}, {kernel.size(0) / 2, kernel.size(1) / 2});
+//         output_channels.push_back(filtered_channel);
+//     }
+
+//     return torch::stack(output_channels, 2);
+// }
+
+
 // int main() {
-//     test_mul();
+//     // Example usage
+//     torch::Tensor image = torch::rand({224, 224, 3});  // Example image tensor (HWC format)
+//     torch::Tensor kernel = torch::rand({3, 3});        // Example kernel tensor (3x3)
+
+//     auto filtered_image = apply_filter_to_image(image, kernel);
+
+//     // Display the shape of the filtered image tensor
+//     std::cout << "Filtered image shape: " << filtered_image.sizes() << std::endl;
+
 //     return 0;
-// }
-
-
-// #include <torch/torch.h>
-// #include <iostream>
-// #include "KANsLinear.cpp" 
-
-// int main() {
-//    int64_t in_features = 2;
-//    int64_t out_features = 1;
-
-//    std::cout << "CHECKING: ..." << std::endl;
-
-//    KANLinear kan_linear(in_features, out_features);
-
-//    torch::Tensor input = torch::randn({5, in_features});
-
-//    torch::Tensor output = kan_linear->forward(input);
-
-//    std::cout << "Input: " << input << std::endl;
-//    std::cout << "Output: " << output << std::endl;
-
-//    kan_linear->update_grid(input);
-
-//    torch::Tensor reg_loss = kan_linear->regularization_loss(1, 0);
-
-//    auto u = input.index({torch::indexing::Slice(), 0});
-//    auto v = input.index({torch::indexing::Slice(), 1});
-
-//    torch::Tensor loss = torch::nn::functional::mse_loss(output.squeeze(-1), (u + v) / (1 + u * v));
-
-//    auto total_loss = loss + 1e-5 * reg_loss;
-//    std::cout << "Total Loss: " << total_loss.item<double>() << std::endl;
-
-//    return 0;
 // }

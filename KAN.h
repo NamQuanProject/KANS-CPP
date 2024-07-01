@@ -19,7 +19,6 @@ public:
        double grid_eps=0.02,
        std::pair<double, double> grid_range = {-1.0, 1.0}
    );
-   int64_t epoch = 20;
    torch::Tensor forward(torch::Tensor x, bool update_grid = false);
    torch::Tensor regularization_loss(double regularize_activation = 1.0, double regularize_entropy = 1.0);
    std::vector<KANLinear> layers;

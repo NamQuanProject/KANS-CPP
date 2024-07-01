@@ -9,15 +9,11 @@ void test_KANLinear() {
 
     int64_t epoch = 100;
     auto optimizer = torch::optim::LBFGS(kan_linear->parameters(), torch::optim::LBFGSOptions(1).max_iter(100));
-    torch::Tensor input = torch::randn({1024, in_features});
+    torch::Tensor input = torch::randn({2024, in_features});
     
     for (int i = 0; i < epoch; ++i) {
         auto closure = [&]() -> torch::Tensor {
             optimizer.zero_grad();
-            // Generate random input tensor
-            // std::cout << "Input: " << input << std::endl;
-            // std::cout << "Output: " << output << std::endl;
-            // Compute regularization loss
             torch::Tensor output = kan_linear->forward(input);
             torch::Tensor reg_loss = kan_linear->regularization_loss(1, 0);
 
@@ -47,8 +43,8 @@ void test_KAN() {
     std::vector<int64_t> layers_hidden = {2, 2, 1};
     KAN kan(layers_hidden);
     auto optimizer = torch::optim::LBFGS(kan->parameters(), torch::optim::LBFGSOptions(1).max_iter(100));
-    int64_t epoch = 75;
-    auto input = torch::rand({1024, 2});
+    int64_t epoch = 100;
+    auto input = torch::rand({2024, 2});
     for (int i = 0; i < epoch; ++i) {
         auto closure = [&]() -> torch::Tensor {
             optimizer.zero_grad();
@@ -69,7 +65,7 @@ void test_KAN() {
         };
         optimizer.step(closure);
     }
-    auto new_input = torch::rand({3, 2});
+    auto new_input = torch::rand({5, 2});
     std::cout << "Input: " << new_input << std::endl;
     std::cout << "Output: " << kan->forward(new_input) << std::endl;
 }
