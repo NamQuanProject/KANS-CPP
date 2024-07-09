@@ -11,13 +11,8 @@ find_package(OpenCV 4 REQUIRED )
 
 # Include OpenCV headers
 include_directories(${OpenCV_INCLUDE_DIRS})
-
-# Add matplotlibcpp include directory
-include_directories(${CMAKE_SOURCE_DIR}/matplotlib-cpp)
-
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${TORCH_LIBRARIES})
-
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
 
 if (MSVC)
