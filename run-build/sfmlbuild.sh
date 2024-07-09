@@ -5,13 +5,38 @@ if [ -d "SFML" ]; then
     echo "SFML directory already exists. Skipping clone."
 else
     # Clone the SFML repository
-    git clone https://github.com/SFML/SFML.git -b 2.5.x
+    git clone https://github.com/SFML/SFML.git -b 2.6.x
     if [ $? -ne 0 ]; then
         echo "Failed to clone SFML repository."
-        exit 1
+        echo "Attempting to download SFML source archive..."
+
+        # Download SFML source archive
+        wget https://www.sfml-dev.org/files/SFML-2.6.1-sources.zip
+        if [ $? -ne 0 ]; then
+            echo "Failed to download SFML source archive."
+            exit 1
+        fi
+
+        # Unzip SFML source archive
+        unzip SFML-2.6.1-sources.zip
+        if [ $? -ne 0 ]; then
+            echo "Failed to unzip SFML source archive."
+            exit 1
+        fi
+
+        # Clean up downloaded archive
+        rm SFML-2.6.1-sources.zip
+
+        # Move unzipped directory to SFML
+        mv SFML-2.6.1 SFML
+        if [ $? -ne 0 ]; then
+            echo "Failed to move SFML source directory."
+            exit 1
+        fi
     fi
 fi
 
+# Navigate into SFML directory
 cd SFML
 
 # Create a build directory and navigate into it
