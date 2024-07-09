@@ -140,7 +140,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=14.4
 CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
 
 //No help, variable specified on the command line.
-CMAKE_PREFIX_PATH:UNINITIALIZED=/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/share/cmake
+CMAKE_PREFIX_PATH:UNINITIALIZED=/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages/torch/share/cmake
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -242,6 +242,9 @@ c10_LIBRARY:FILEPATH=/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/pytho
 
 //Path to a library.
 kineto_LIBRARY:FILEPATH=kineto_LIBRARY-NOTFOUND
+
+//The directory containing a CMake configuration file for matplotlibcpp.
+matplotlibcpp_DIR:PATH=matplotlibcpp_DIR-NOTFOUND
 
 
 ########################
@@ -387,6 +390,8 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/Users/quannguyennam/Documents/Projects/KANS/opencv/build][v4.10.0(4)]
 //Details about finding Torch
 FIND_PACKAGE_MESSAGE_DETAILS_Torch:INTERNAL=[/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libtorch.dylib][/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include;/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include][v()]
 

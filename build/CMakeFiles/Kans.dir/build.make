@@ -92,7 +92,22 @@ Kans_EXTERNAL_OBJECTS =
 
 Kans: CMakeFiles/Kans.dir/main.cpp.o
 Kans: CMakeFiles/Kans.dir/build.make
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_gapi.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_highgui.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_ml.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_objdetect.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_photo.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_stitching.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_video.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_videoio.4.10.0.dylib
 Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libc10.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_imgcodecs.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_dnn.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_calib3d.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_features2d.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_flann.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_imgproc.4.10.0.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_core.4.10.0.dylib
 Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libtorch.dylib
 Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib
 Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libc10.dylib
