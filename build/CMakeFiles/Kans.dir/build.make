@@ -101,6 +101,9 @@ Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_st
 Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_video.4.10.0.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_videoio.4.10.0.dylib
 Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libc10.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-graphics.2.6.1.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-network.2.6.1.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-audio.2.6.1.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_imgcodecs.4.10.0.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_dnn.4.10.0.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_calib3d.4.10.0.dylib
@@ -111,6 +114,8 @@ Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_co
 Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libtorch.dylib
 Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib
 Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libc10.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-window.2.6.1.dylib
+Kans: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-system.2.6.1.dylib
 Kans: CMakeFiles/Kans.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/quannguyennam/Documents/Projects/KANS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Kans"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Kans.dir/link.txt --verbose=$(VERBOSE)

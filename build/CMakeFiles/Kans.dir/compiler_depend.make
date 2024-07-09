@@ -5453,6 +5453,82 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
   /Users/quannguyennam/Documents/Projects/KANS/KAN.h \
   /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.cpp \
   /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.h \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Config.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/BlendMode.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/CircleShape.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Color.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/ConvexShape.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Drawable.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Export.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Font.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glyph.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Image.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/PrimitiveType.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Rect.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Rect.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RectangleShape.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderStates.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderTarget.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderTexture.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderWindow.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Shader.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Shape.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Texture.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Transform.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Transformable.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Vertex.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexArray.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/View.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Clock.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Err.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Export.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/FileInputStream.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/InputStream.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Lock.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/MemoryInputStream.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Mutex.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/NonCopyable.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Sleep.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/String.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/String.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Thread.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Thread.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocal.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Time.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Utf.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Utf.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector2.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector2.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector3.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector3.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Clipboard.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Context.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/ContextSettings.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Cursor.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Event.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Export.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/GlResource.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Joystick.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Keyboard.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Mouse.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Sensor.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Touch.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/VideoMode.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Vulkan.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Window.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowBase.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowHandle.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/dataset.h \
   /Users/quannguyennam/Documents/Projects/KANS/opencv/build/opencv2/opencv_modules.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/opencv/include/opencv2/opencv.hpp \
@@ -5616,15 +5692,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/config.h:
 
-/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/composite_index.h:
-
 /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/all_indices.h:
 
 /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann.hpp:
 
 /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/features2d/include/opencv2/features2d.hpp:
-
-/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/utils/inference_engine.hpp:
 
 /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/dnn.inl.hpp:
 
@@ -5657,6 +5729,78 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Projects/KANS/opencv/include/opencv2/opencv.hpp:
 
 /Users/quannguyennam/Documents/Projects/KANS/dataset.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowBase.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Vulkan.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/VideoMode.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Mouse.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Keyboard.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Export.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Context.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector3.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector2.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Utf.inl:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Utf.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Time.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/utils/inference_engine.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/String.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Sleep.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/MemoryInputStream.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Err.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/View.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexArray.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Transformable.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Texture.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Shape.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderWindow.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderTarget.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Rect.inl:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Rect.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/PrimitiveType.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Image.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glyph.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/composite_index.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.inl:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Font.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Export.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/ConvexShape.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics.hpp:
 
 /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/saturate.hpp:
 
@@ -5833,6 +5977,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/strides.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/reverse_iterator.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RectangleShape.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/quint4x2.h:
 
@@ -6046,6 +6192,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_trilinear3d_backward_meta.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/String.inl:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_trilinear3d.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest3d_native.h:
@@ -6098,6 +6246,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unsafe_chunk.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector2.inl:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unique_dim_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unique_dim_native.h:
@@ -6143,6 +6293,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unbind.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/type_as_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Vertex.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trunc_ops.h:
 
@@ -6190,6 +6342,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/transpose_copy_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/BlendMode.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/transpose_copy.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trace_backward_ops.h:
@@ -6197,6 +6351,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trace_backward_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trace_backward.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Touch.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_bicubic2d_backward_native.h:
 
@@ -6223,6 +6379,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_padded_tensor.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Cursor.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_mkldnn_backward_ops.h:
 
@@ -7022,6 +7180,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reflection_pad2d.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Thread.inl:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reflection_pad1d_ops.h:
 
 /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp:
@@ -7051,6 +7211,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/real_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/real_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/real.h:
 
@@ -7258,6 +7420,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/numpy_T.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/NonCopyable.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/nuclear_norm_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/normal_native.h:
@@ -7367,6 +7531,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_layer_norm_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_layer_norm_backward_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/InputStream.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_layer_norm_backward.h:
 
@@ -7796,6 +7962,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logit.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderTexture.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logical_xor_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logical_xor_native.h:
@@ -7823,6 +7991,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logdet.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logaddexp_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logaddexp_meta.h:
 
@@ -8107,6 +8277,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/leaky_relu_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/leaky_relu_backward_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/CircleShape.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/miopen_rnn.h:
 
@@ -8541,6 +8713,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_backward_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_backward.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Export.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_dropout_backward.h:
 
@@ -9160,6 +9334,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/frac_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/GlResource.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/div_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_u_int64_t.h:
@@ -9169,6 +9345,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/dist_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/dist.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowHandle.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/embedding_ops.h:
 
@@ -9415,6 +9593,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/corrcoef_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/copysign_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Clipboard.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/copysign_meta.h:
 
@@ -10460,6 +10640,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/embedding_backward.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Thread.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/batch_norm_elemt_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_validate_sparse_bsc_tensor_args.h:
@@ -10525,6 +10707,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unbind_copy.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact2d.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/empty_native.h:
 
@@ -11264,6 +11448,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/video/include/opencv2/video.hpp:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Shader.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_scaled_dot_product_efficient_attention.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_symbol_aliasing.h:
@@ -11365,6 +11551,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_propagate_xla_data_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_propagate_xla_data_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocal.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_prelu_kernel_backward_native.h:
 
@@ -11494,6 +11682,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_nested_tensor_from_mask_left_aligned.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardswish_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/constant_pad_nd_native.h:
@@ -11594,6 +11784,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fft_irfft_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Event.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_mps_convolution_transpose_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/histogramdd.h:
@@ -11618,6 +11810,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_masked_softmax_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Clock.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/frobenius_norm.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_masked_softmax_backward_ops.h:
@@ -11639,6 +11833,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_masked_scale_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/conv_tbc.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/avg_pool2d_backward_native.h:
 
@@ -11687,6 +11883,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/clamp_max.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/lower_bound.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Drawable.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_log10.h:
 
@@ -11755,6 +11953,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_fd_clr.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_linalg_eigh_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Window.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/addcmul_meta.h:
 
@@ -12972,6 +13172,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_serialization_subcmul_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Mutex.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/any_of.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/utility:
@@ -13021,6 +13223,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_cast_Float_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_add_relu.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/FileInputStream.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_add_batch_dim.h:
 
@@ -13242,6 +13446,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/transform.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Config.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/negative_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/DimVector.h:
@@ -13462,6 +13668,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/atleast_2d_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Sensor.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/wait.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_unsafe_index.h:
@@ -13598,6 +13806,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ino_t.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/ContextSettings.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ino64_t.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/core/Allocator.h:
@@ -13697,6 +13907,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/clone.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gru_cell_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Color.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:
 
@@ -13956,6 +14168,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_to_sparse.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stdio.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_validate_sparse_bsr_tensor_args.h:
@@ -13987,6 +14201,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/jit/frontend/function_schema_parser.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ostream:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Lock.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_embedding_bag_per_sample_weights_backward_ops.h:
 
@@ -14112,6 +14328,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/binary_search.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.inl:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fft_irfft2_native.h:
@@ -14201,6 +14419,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/index_select_backward.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/pstl_transform_reduce.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderStates.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_serialization_subcmul_ops.h:
 
@@ -14617,6 +14837,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/lstm_mps_backward_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_partition_copy.h:
 
@@ -15256,6 +15478,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/QuantizerBase.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Transform.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/string_view.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_is_any_true_native.h:
@@ -15745,6 +15969,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/dispatch/OperatorEntry.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/endian.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Joystick.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/Context.h:
 
@@ -16257,6 +16483,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/triu_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_assert_tensor_metadata_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector3.inl:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_adjacent_find.h:
 

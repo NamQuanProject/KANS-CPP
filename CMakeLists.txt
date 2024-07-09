@@ -1,20 +1,31 @@
 cmake_minimum_required(VERSION 3.17 FATAL_ERROR)
 
 project(Kans)
+
+# Set paths for OpenCV and SFML
 set(CMAKE_CXX_STANDARD 14)
 set(OpenCV_DIR /Users/quannguyennam/Documents/Projects/KANS/opencv/build)
+set(SFML_ROOT "/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build")
 
-
+# Find required packages
 find_package(Torch REQUIRED)
-find_package(OpenCV 4 REQUIRED )
+find_package(OpenCV 4 REQUIRED)
+find_package(SFML 2.6 COMPONENTS system window graphics REQUIRED)
 
+# Include OpenCV and SFML headers
+include_directories(${OpenCV_INCLUDE_DIRS} ${SFML_INCLUDE_DIR})
 
-# Include OpenCV headers
-include_directories(${OpenCV_INCLUDE_DIRS})
+# Add the main executable
 add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${TORCH_LIBRARIES})
+
+# Link libraries
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${TORCH_LIBRARIES} sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
+
+
+# Set C++ standard to C++17
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
 
+# Handle MSVC specific settings
 if (MSVC)
   file(GLOB TORCH_DLLS "${TORCH_INSTALL_PREFIX}/lib/*.dll")
   add_custom_command(TARGET ${PROJECT_NAME}
