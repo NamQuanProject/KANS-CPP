@@ -1,6 +1,5 @@
 #include "train.h"
 
-
 void showImage(const torch::Tensor& tensor, const std::string& window_name) {
     auto img_tensor = tensor.cpu();
     img_tensor = img_tensor.detach();
@@ -121,6 +120,11 @@ void trainMNIST() {
         return;
     }
 }
+
+
+
+
+
 
 
 

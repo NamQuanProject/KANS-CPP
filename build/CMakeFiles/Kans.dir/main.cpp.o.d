@@ -5640,5 +5640,5 @@ CMakeFiles/Kans.dir/main.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.cpp \
   /Users/quannguyennam/Documents/Projects/KANS/train.cpp \
   /Users/quannguyennam/Documents/Projects/KANS/train.h \
-  /Users/quannguyennam/Documents/Projects/KANS/UI.cpp \
-  /Users/quannguyennam/Documents/Projects/KANS/UI.h
+  /Users/quannguyennam/Documents/Projects/KANS/UI.h \
+  /Users/quannguyennam/Documents/Projects/KANS/UI.cpp
