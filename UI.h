@@ -80,9 +80,16 @@ public:
     sf::Text currentLossText;
     sf::Text accuracyText;
     sf::Text batchText;
+
+    sf::Text dataProgressText;
+    sf::Text trainingProgressText;
     sf::RectangleShape progressBar;
     sf::RectangleShape trainingProgressIndicator;
     sf::RectangleShape dataProgressIndicator;
+    
+    sf::RectangleShape configBoardButton;
+    sf::Text configBoardText;
+
     sf::Sprite imageSprite;
     sf::Texture imageTexture;
     

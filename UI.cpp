@@ -157,6 +157,7 @@ App::App()
 
 
 
+
     currentEpochText.setFont(font);
     currentEpochText.setString("Current Epoch: 0");
     currentEpochText.setPosition(100, 400);
@@ -202,14 +203,45 @@ App::App()
     progressBar.setOutlineThickness(1);
     progressBar.setOutlineColor(sf::Color::Black);
 
+
+    trainingProgressText.setFont(font);
+    trainingProgressText.setCharacterSize(20);
+    trainingProgressText.setFillColor(sf::Color::White);
+    trainingProgressText.setPosition(100.f, 600.f);
+    
     trainingProgressIndicator.setSize(sf::Vector2f(0, 20));
-    trainingProgressIndicator.setPosition(100.f, 500.f);
+    trainingProgressIndicator.setPosition(100.f, 650.f);
     trainingProgressIndicator.setFillColor(sf::Color::Blue);
 
+    dataProgressText.setFont(font);
+    dataProgressText.setCharacterSize(20);
+    dataProgressText.setFillColor(sf::Color::White);
+    dataProgressText.setPosition(100.f, 500.f);
+
+
     dataProgressIndicator.setSize(sf::Vector2f(0, 20));
-    dataProgressIndicator.setPosition(100.f, 600.f);
+    dataProgressIndicator.setPosition(100.f, 550.f);
     dataProgressIndicator.setFillColor(sf::Color::Red);
 
+
+    configBoardButton.setSize(sf::Vector2f(200, 50));
+    configBoardButton.setPosition(800.f, 250.f);
+
+
+    configBoardText.setFont(font);
+    configBoardText.setFillColor(sf::Color::Blue);
+    configBoardText.setString("Config Section:");
+    configBoardText.setCharacterSize(20);
+
+    sf::FloatRect configBoardRect = configBoardText.getLocalBounds();
+    configBoardText.setOrigin(configBoardRect .left + configBoardRect.width / 2.0f, configBoardRect.top + configBoardRect .height / 2.0f);
+    configBoardText.setPosition(
+        configBoardButton.getPosition().x + configBoardButton.getSize().x / 2.0f,
+        configBoardButton.getPosition().y + configBoardButton.getSize().y / 2.0f
+    );
+
+
+    // TEST PAGE:
     currentPage = Page::MainMenu;
 }
 
@@ -243,6 +275,8 @@ void App::handleButtonClick(const sf::Vector2i& mousePosition) {
         structureInputText.setString("|");
     } else if (updateVectorButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
         updateModelStructure();
+    } else if (configBoardButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage != Page::MainMenu) {
+        currentPage = Page::MainMenu;
     } else if (startTrainingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
         currentPage = Page::Training;
         trainModel();
@@ -338,22 +372,37 @@ void App::drawMainMenu() {
 }
 
 void App::drawTrainingPage() {
+    // UPPER PART:
     window.draw(datasetText);
     window.draw(currentEpochText);
     window.draw(currentLossText);
     window.draw(accuracyText);
     window.draw(batchText);
 
+
+
+    // FIRST IMAGE OF EACH BATCH:
     window.draw(imageSprite);
 
     
 
-
+    // MOVE TO TEST OR CONFIG SECTIONS:
     window.draw(startTestingButton);
     window.draw(startTestingText);
 
+    window.draw(configBoardButton);
+    window.draw(configBoardText);
+
+
+
+
+    // PROGRESSING BAR:
+    window.draw(dataProgressText);
     window.draw(dataProgressIndicator);
+
+    window.draw(trainingProgressText);
     window.draw(trainingProgressIndicator);
+
 }
 
 void App::drawTestPage() {
@@ -395,15 +444,19 @@ void App::trainModel() {
     render();
     float dataProgress = 1.0 / 3.0;
     dataProgressIndicator.setSize(sf::Vector2f(progressBar.getSize().x * dataProgress, progressBar.getSize().y));
+    dataProgressText.setString("Data Processing: " + std::to_string(dataProgress * 100) + "%");
     render();
     MNISTDataset dataset(dataPath);
     
     train_batches = createBatches(dataset.createDataset().first, 64);
     dataProgress = 2.0 / 3.0;
     dataProgressIndicator.setSize(sf::Vector2f(progressBar.getSize().x * dataProgress, progressBar.getSize().y));
+    dataProgressText.setString("Data Processing: " + std::to_string(dataProgress * 100) + "%");
     render();
     test_batches = createBatches(dataset.createDataset().second, 64);
+    
     dataProgress = 3.0 / 3.0;
+    dataProgressText.setString("Data Processing: " + std::to_string(dataProgress * 100) + "%");
     dataProgressIndicator.setSize(sf::Vector2f(progressBar.getSize().x * dataProgress, progressBar.getSize().y));
     render();
 
@@ -451,11 +504,12 @@ void App::trainModel() {
                 render();
             }
         }
-        currentEpochText.setString("Epochs" + std::to_string(epoch + 1));
+        currentEpochText.setString("Current Epochs: " + std::to_string(epoch + 1));
         currentLossText.setString("Loss: " + std::to_string(epoch_loss / train_batches.size()));
         
         float progress = static_cast<float>(epoch + 1) / epochs;
         trainingProgressIndicator.setSize(sf::Vector2f(progressBar.getSize().x * progress, progressBar.getSize().y));
+        trainingProgressText.setString("Training Progress: " + std::to_string(progress * 100) + "%");
         render();
     }
 
@@ -484,8 +538,14 @@ void App::trainModel() {
     std::cout << "Test Loss: " << test_loss / test_batches.size() << std::endl;
     std::cout << "Test Accuracy: " << static_cast<double>(correct) / total * 100.0 << "%" << std::endl;
     accuracyText.setString("Accuracy: " + std::to_string(static_cast<double>(correct) / total * 100.0) + "%");
+    torch::save(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KAN.pt");
     render();
+    
 }
+
+
+
+
 
 
 
