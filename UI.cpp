@@ -373,11 +373,11 @@ void App::handleTextInput(const sf::Event& event) {
         else if (currentPage == Page::Testing) {
             if (event.text.unicode == '\b' && userNumImageInput.getSize() > 0) { 
                 userNumImageInput.erase(userNumImageInput.getSize() - 1, 1);
-                numImageInputText.setString(userNumImageInput.toAnsiString());
+                numImageInputText.setString(userNumImageInput.toAnsiString() + "|");
             
             } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
                 userNumImageInput += static_cast<char>(event.text.unicode);
-                numImageInputText.setString(userNumImageInput.toAnsiString());
+                numImageInputText.setString(userNumImageInput.toAnsiString() + "|");
             }
         }
         
@@ -409,23 +409,20 @@ void App::handleButtonClick(const sf::Vector2i& mousePosition) {
     } 
     
     else if (numImageInputBox.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
-        numImageInputText.setString("|");
+        if (numImageInputText.getString() == "Image num: ") numImageInputText.setString("|");
         
-        // if (numImageInputText.getString() == "" || numImageInputText.getString() == "Image num: ") {
-            
-        // }
     }
 
     else if (testButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
-        
         testModel();
         userNumImageInput.clear();
+        numImageInputText.setString("Image num: ");
     }
 
     else {
         if (currentPage == Page::Testing) {
             numImageInputText.setString("Image num: ");
-
+            userNumImageInput.clear();
         }
         
     }
