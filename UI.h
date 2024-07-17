@@ -24,7 +24,7 @@ public:
     void updateModelStructure();
     void trainModel();
     void testModel();
-
+    void resetParameters();
 
     // EVENTS OPERATIONS:
     void handleButtonClick(const sf::Vector2i& mousePosition);

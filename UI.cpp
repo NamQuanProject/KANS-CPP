@@ -138,8 +138,6 @@ App::App()
     );
 
     
-
-
     startTestingButton.setSize(sf::Vector2f(200, 50));
     startTestingButton.setPosition(800, 350);
 
@@ -241,8 +239,28 @@ App::App()
     );
 
 
+
+    // TESTING PAGE: 
+
+
     // TEST PAGE:
     currentPage = Page::MainMenu;
+}
+
+void App::resetParameters() {
+    epochs = 15;
+    currentEpoch = 0;
+    epochText.setString("Epochs:"  + std::to_string(epochs));
+    currentEpochText.setString("Epochs: " + std::to_string(currentEpoch));
+    batchText.setString("Batch: 0");
+    currentLoss = 0.0;
+    currentLossText.setString("Current Loss: " + std::to_string(currentLoss));
+    modelStructure = {784, 64, 10};
+    accuracyText.setString("Accuracy: 0.0%");
+    dataProgressText.setString("Data process: 0%");
+    trainingProgressIndicator.setSize(sf::Vector2f(0, 0));
+    trainingProgressText.setString("Training Progress: 0%");
+    
 }
 
 void App::run() {
@@ -254,10 +272,10 @@ void App::run() {
 
 void App::handleTextInput(const sf::Event& event) {
     if (event.type == sf::Event::TextEntered) {
-        if (event.text.unicode == '\b' && userStructureInput.getSize() > 0) { // Handle backspace
+        if (event.text.unicode == '\b' && userStructureInput.getSize() > 0) { 
             userStructureInput.erase(userStructureInput.getSize() - 1, 1);
             structureInputText.setString(userStructureInput.toAnsiString());
-        } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { // Handle printable characters
+        } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
             userStructureInput += static_cast<char>(event.text.unicode);
             structureInputText.setString(userStructureInput.toAnsiString());
         }
@@ -276,6 +294,7 @@ void App::handleButtonClick(const sf::Vector2i& mousePosition) {
     } else if (updateVectorButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
         updateModelStructure();
     } else if (configBoardButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage != Page::MainMenu) {
+        resetParameters();
         currentPage = Page::MainMenu;
     } else if (startTrainingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
         currentPage = Page::Training;
@@ -412,7 +431,7 @@ void App::drawTestPage() {
 }
 
 sf::Image App::tensorToSFMLImage(const torch::Tensor& tensor) {
-    int scale_factor = 10; // Adjust scale factor as needed
+    int scale_factor = 10; 
     auto img_tensor = tensor.cpu().detach();
     img_tensor = img_tensor.view({28, 28});
 
