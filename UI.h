@@ -37,15 +37,16 @@ public:
     Page currentPage;
 
     // TENSOR AND IMAGE OPERATIONS FOR VISULIZE
-    sf::Image tensorToSFMLImage(const torch::Tensor& tensor);
-
+    sf::Image tensorToSFMLImage(const torch::Tensor& tensor, int scaleFactor);
     sf::RenderWindow window;
     sf::Font font;
     sf::Text title;
-    
     sf::Text startTrainingText;
     sf::Text startTestingText;
     sf::Text testResultText;
+    sf::Text learningRateText;
+    sf::Text weightDecayText;
+    sf::RectangleShape hyperparametersBorder;
 
 
     // EPOCHS ADJUSTMENTS:
@@ -92,15 +93,44 @@ public:
 
     sf::Sprite imageSprite;
     sf::Texture imageTexture;
+    sf::Text trainingLabelText;
     
+    sf::RectangleShape metricInfoBorder;
+    sf::RectangleShape progressBarBorder;
+
+    // TESTING 
+    sf::Text testTitle;
+    sf::Text userNumImageText;
+    sf::Text predictionText;
+    sf::Sprite testImageSprite;
+    sf::Texture testImageTexture;
+
+
+    sf::String userNumImageInput;
+    sf::RectangleShape numImageInputBox;
+    sf::Text numImageInputText;
+    
+
+    sf::RectangleShape testButton;
+    sf::Text testButtonText;
+
+    
+    void saveImageToFolder(const torch::Tensor& tensor, const std::string& filename);
+    torch::Tensor loadImageFromFolder(const std::string& filename);
+    std::string handleFilePath(sf::String number);
+
 
     int epochs;
     int currentEpoch;
     int batchSize = 64;
     double currentLoss;
+    double learningRate = 1e-3;
+    double weightDecay = 1e-4;
     std::string dataPath;
     torch::Device device;
     std::vector<std::pair<torch::Tensor, torch::Tensor>> train_batches;
     std::vector<std::pair<torch::Tensor, torch::Tensor>> test_batches;
     std::string vectorToString(std::vector<int64_t>& vec);
+
+
 };

@@ -35,24 +35,28 @@ App::App()
     sf::Vector2u textureSize = backgroundTexture.getSize();
     backgroundSprite.setScale(static_cast<float>(windowSize.x) / textureSize.x, static_cast<float>(windowSize.y) / textureSize.y);
     
-    // TITLE
-    title.setFont(font);
-    title.setString("Training Custom Board");
-    title.setCharacterSize(30);
-    title.setFillColor(sf::Color::White);
-    title.setPosition(430.f, 100.f);
-
     
+
+
     // MAIN PAGE:
     // EPOCH ADJUSTMENTS:
-    epochText.setCharacterSize(20);
+
+    // TITLE
+    title.setFont(font);
+    title.setString("KANs Training Hyperparamers Settings");
+    title.setCharacterSize(30);
+    title.setFillColor(sf::Color::White);
+    title.setPosition(360.f, 50.f);
+
+
+    epochText.setCharacterSize(25);
     epochText.setFont(font);
     epochText.setString("Epochs: " + std::to_string(epochs));
-    epochText.setPosition(100.f, 650.f);
+    epochText.setPosition(450.f, 150.f);
 
 
     increaseEpochButton.setSize(sf::Vector2f(25, 25));
-    increaseEpochButton.setPosition(110.f, 700.f);
+    increaseEpochButton.setPosition(450.f, 200.f);
     
     increaseEpochText.setFont(font);
     increaseEpochText.setString("+");
@@ -67,7 +71,7 @@ App::App()
     );
 
     decreaseEpochButton.setSize(sf::Vector2f(25, 25));
-    decreaseEpochButton.setPosition(170.f, 700.f);
+    decreaseEpochButton.setPosition(500.f, 200.f);
 
     decreaseEpochText.setFont(font);
     decreaseEpochText.setString("-");
@@ -80,10 +84,24 @@ App::App()
         decreaseEpochButton.getPosition().x + decreaseEpochButton.getSize().x / 2.0f,
         decreaseEpochButton.getPosition().y + decreaseEpochButton.getSize().y / 2.0f
     );
+    // Hyperparameter 
+    learningRateText.setFont(font);
+    learningRateText.setString("Learning Rate: " + std::to_string(learningRate));
+    learningRateText.setCharacterSize(25); 
+    learningRateText.setFillColor(sf::Color::White);
+    learningRateText.setPosition(450.f, 450.f);
 
-    // STRUCTURE ADJUSTMENT
+    weightDecayText.setFont(font);
+    weightDecayText.setString("Weight Decay: " + std::to_string(weightDecay));
+    weightDecayText.setCharacterSize(25); 
+    weightDecayText.setFillColor(sf::Color::White);
+    weightDecayText.setPosition(450.f, 530.f);
+    
+
+
+    /*--------------------------------------------STRUCTURES CHANGE--------------------------------------------*/
     structureInputBox.setSize(sf::Vector2f(200, 25));
-    structureInputBox.setPosition(800.f, 700.f);
+    structureInputBox.setPosition(450.f, 350.f);
     structureInputBox.setFillColor(sf::Color::White);
 
     structureInputText.setFont(font);
@@ -100,7 +118,7 @@ App::App()
     );
     
     updateVectorButton.setSize(sf::Vector2f(100, 25));
-    updateVectorButton.setPosition(1015.f, 700.f);
+    updateVectorButton.setPosition(680.f, 350.f);
 
     updateVectorText.setFont(font);
     updateVectorText.setString("Update");
@@ -116,15 +134,21 @@ App::App()
 
     vectorText.setFont(font);
     vectorText.setString("Model Structure:  " + vectorToString(modelStructure));
-    vectorText.setCharacterSize(20);
-    vectorText.setPosition(815.f, 650.f);
+    vectorText.setCharacterSize(25);
+    vectorText.setPosition(450.f, 300.f);
 
+    hyperparametersBorder.setSize(sf::Vector2f(445.f, 500.f));
+    hyperparametersBorder.setPosition(400.f, 130.f);
+    hyperparametersBorder.setFillColor(sf::Color::Transparent);
+    hyperparametersBorder.setOutlineThickness(5.f);
+    hyperparametersBorder.setOutlineThickness(5.f);
+    hyperparametersBorder.setOutlineColor(sf::Color::White);
 
-    // START TRAINING BUTTONS AND TESTING BUTTONS
+    /*-----------------------------------------START TRAINING AND TEST BUTTONS--------------------------------------------*/
     startTrainingButton.setSize(sf::Vector2f(200, 50));
-    startTrainingButton.setPosition(800, 250);
+    startTrainingButton.setPosition(400.f, 700.f);
 
-
+    
     startTrainingText.setFont(font);
     startTrainingText.setFillColor(sf::Color::Blue);
     startTrainingText.setString("Start Training: ");
@@ -139,7 +163,7 @@ App::App()
 
     
     startTestingButton.setSize(sf::Vector2f(200, 50));
-    startTestingButton.setPosition(800, 350);
+    startTestingButton.setPosition(650.f, 700.f);
 
     startTestingText.setFont(font);
     startTestingText.setFillColor(sf::Color::Blue);
@@ -165,37 +189,44 @@ App::App()
     currentLossText.setPosition(100, 450);
 
 
-    // TRAINING PAGE: 
+    /*--------------------------------------------TRAINING PAGE--------------------------------------------*/
     datasetText.setFont(font);
-    datasetText.setString("Dataset: MNIST Num-Samples: 42000 Train: 90% Test: 10% ");
-    datasetText.setCharacterSize(18);
+    datasetText.setString("Dataset: MNIST Num-Samples: 42000\nTrain: 90% Test: 10% ");
+    datasetText.setCharacterSize(20);
     datasetText.setPosition(700.f, 50.f);
 
     
     currentEpochText.setFont(font);
     currentEpochText.setString("Epoch: 0");
-    currentEpochText.setCharacterSize(18);
-    currentEpochText.setPosition(700.f, 100.f);
+    currentEpochText.setCharacterSize(20);
+    currentEpochText.setPosition(700.f, 120.f);
     
     currentLossText.setFont(font);
     currentLossText.setString("Loss: 0.0");
-    currentLossText.setCharacterSize(18);
-    currentLossText.setPosition(700.f, 150.f);
+    currentLossText.setCharacterSize(20);
+    currentLossText.setPosition(700.f, 170.f);
+
+
+
+    trainingLabelText.setFont(font);
+    trainingLabelText.setCharacterSize(20);
+    trainingLabelText.setPosition(130.f, 480.f);
+    trainingLabelText.setFillColor(sf::Color::White);
 
     accuracyText.setFont(font);
     accuracyText.setString("Accuracy: 0.0%");
-    accuracyText.setCharacterSize(18);
-    accuracyText.setPosition(700.f, 200.f);
+    accuracyText.setCharacterSize(20);
+    accuracyText.setPosition(700.f, 220.f);
     
     batchText.setFont(font);
     batchText.setString("Batch: 0");
     batchText.setCharacterSize(18);
-    batchText.setPosition(700.f, 250.f);
+    batchText.setPosition(700.f, 270.f);
 
 
 
 
-    progressBar.setSize(sf::Vector2f(400, 20));
+    progressBar.setSize(sf::Vector2f(350, 20));
     progressBar.setPosition(400.f, 600.f);
     progressBar.setFillColor(sf::Color::Green);
     progressBar.setOutlineThickness(1);
@@ -205,25 +236,25 @@ App::App()
     trainingProgressText.setFont(font);
     trainingProgressText.setCharacterSize(20);
     trainingProgressText.setFillColor(sf::Color::White);
-    trainingProgressText.setPosition(100.f, 600.f);
+    trainingProgressText.setPosition(700.f, 500.f);
     
     trainingProgressIndicator.setSize(sf::Vector2f(0, 20));
-    trainingProgressIndicator.setPosition(100.f, 650.f);
+    trainingProgressIndicator.setPosition(700.f, 530.f);
     trainingProgressIndicator.setFillColor(sf::Color::Blue);
 
     dataProgressText.setFont(font);
     dataProgressText.setCharacterSize(20);
     dataProgressText.setFillColor(sf::Color::White);
-    dataProgressText.setPosition(100.f, 500.f);
+    dataProgressText.setPosition(700.f, 420.f);
 
 
     dataProgressIndicator.setSize(sf::Vector2f(0, 20));
-    dataProgressIndicator.setPosition(100.f, 550.f);
+    dataProgressIndicator.setPosition(700.f, 450.f);
     dataProgressIndicator.setFillColor(sf::Color::Red);
 
 
     configBoardButton.setSize(sf::Vector2f(200, 50));
-    configBoardButton.setPosition(800.f, 250.f);
+    configBoardButton.setPosition(400.f, 700.f);
 
 
     configBoardText.setFont(font);
@@ -238,12 +269,70 @@ App::App()
         configBoardButton.getPosition().y + configBoardButton.getSize().y / 2.0f
     );
 
+    
+    
+    metricInfoBorder.setSize(sf::Vector2f(400.f, 300.f));
+    metricInfoBorder.setPosition(680.f, 40.f);
+    metricInfoBorder.setFillColor(sf::Color::Transparent);
+    metricInfoBorder.setOutlineThickness(5.f);
+    metricInfoBorder.setOutlineThickness(5.f);
+    metricInfoBorder.setOutlineColor(sf::Color::White);
+    
+    
+    progressBarBorder.setSize(sf::Vector2f(400.f, 200.f));
+    progressBarBorder.setPosition(680.f, 400.f);
+    progressBarBorder.setFillColor(sf::Color::Transparent);
+    progressBarBorder.setOutlineThickness(5.f);
+    progressBarBorder.setOutlineThickness(5.f);
+    progressBarBorder.setOutlineColor(sf::Color::White);
 
 
-    // TESTING PAGE: 
+    /*--------------------------------------------TESTING PARTS--------------------------------------------*/
+    testTitle.setFont(font);
+    testTitle.setString("KANs Testing Board");
+    testTitle.setCharacterSize(30);
+    testTitle.setFillColor(sf::Color::White);
+    testTitle.setPosition(450.f, 100.f);
+
+    predictionText.setFont(font); 
+    predictionText.setCharacterSize(20); 
+    predictionText.setFillColor(sf::Color::White); 
+    predictionText.setPosition(180.f, 700.f);
 
 
-    // TEST PAGE:
+    numImageInputBox.setSize(sf::Vector2f(150, 30));
+    numImageInputBox.setPosition(800.f, 650.f);
+    numImageInputBox.setFillColor(sf::Color::White);
+
+    numImageInputText.setFont(font);
+    numImageInputText.setString("Image num: ");
+    numImageInputText.setCharacterSize(20);
+    numImageInputText.setFillColor(sf::Color::Black);
+
+
+    sf::FloatRect numImageTextRect = numImageInputText.getLocalBounds();
+    numImageInputText.setOrigin(numImageTextRect.left + numImageTextRect.width / 2.0f, numImageTextRect.top + numImageTextRect.height / 2.0f);
+    numImageInputText.setPosition(
+        numImageInputBox.getPosition().x + numImageInputBox.getSize().x / 2.0f,
+        numImageInputBox.getPosition().y + numImageInputBox.getSize().y / 2.0f
+    );
+
+    testButton.setSize(sf::Vector2f(200, 30));
+    testButton.setPosition(800.f, 700.f);
+    testButton.setFillColor(sf::Color::White);
+
+    testButtonText.setFont(font);
+    testButtonText.setString("TEST");
+    testButtonText.setCharacterSize(20);
+    testButtonText.setFillColor(sf::Color::Black);
+    sf::FloatRect testButtonRect = testButtonText.getLocalBounds();
+    testButtonText.setOrigin(testButtonRect.left + testButtonRect.width / 2.0f, testButtonRect.top + testButtonRect.height / 2.0f);
+    testButtonText.setPosition(
+        testButton.getPosition().x + testButton.getSize().x / 2.0f,
+        testButton.getPosition().y + testButton.getSize().y / 2.0f
+    );
+
+    // SETUP CURRENT PAGE:
     currentPage = Page::MainMenu;
 }
 
@@ -272,35 +361,73 @@ void App::run() {
 
 void App::handleTextInput(const sf::Event& event) {
     if (event.type == sf::Event::TextEntered) {
-        if (event.text.unicode == '\b' && userStructureInput.getSize() > 0) { 
-            userStructureInput.erase(userStructureInput.getSize() - 1, 1);
-            structureInputText.setString(userStructureInput.toAnsiString());
-        } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
-            userStructureInput += static_cast<char>(event.text.unicode);
-            structureInputText.setString(userStructureInput.toAnsiString());
+        if (currentPage == Page::MainMenu) {
+            if (event.text.unicode == '\b' && userStructureInput.getSize() > 0) { 
+                userStructureInput.erase(userStructureInput.getSize() - 1, 1);
+                structureInputText.setString(userStructureInput.toAnsiString());
+            } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
+                userStructureInput += static_cast<char>(event.text.unicode);
+                structureInputText.setString(userStructureInput.toAnsiString());
+            }
         }
+        else if (currentPage == Page::Testing) {
+            if (event.text.unicode == '\b' && userNumImageInput.getSize() > 0) { 
+                userNumImageInput.erase(userNumImageInput.getSize() - 1, 1);
+                numImageInputText.setString(userNumImageInput.toAnsiString());
+            
+            } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
+                userNumImageInput += static_cast<char>(event.text.unicode);
+                numImageInputText.setString(userNumImageInput.toAnsiString());
+            }
+        }
+        
     }
 }
 
 void App::handleButtonClick(const sf::Vector2i& mousePosition) {
-    if (increaseEpochButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+    if (increaseEpochButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::MainMenu) {
         epochs++;
         epochText.setString("Epochs: " + std::to_string(epochs));
-    } else if (decreaseEpochButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+    } else if (decreaseEpochButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::MainMenu) {
         epochs--;
         epochText.setString("Epochs: " + std::to_string(epochs));
-    } else if (structureInputBox.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+    } else if (structureInputBox.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::MainMenu) {
         structureInputText.setString("|");
-    } else if (updateVectorButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+    } else if (updateVectorButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::MainMenu) {
         updateModelStructure();
     } else if (configBoardButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage != Page::MainMenu) {
         resetParameters();
         currentPage = Page::MainMenu;
-    } else if (startTrainingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
-        currentPage = Page::Training;
-        trainModel();
+        
+    } else if (startTrainingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::MainMenu) {
+        if (currentPage == Page::MainMenu) {
+            currentPage = Page::Training;
+            trainModel();
+        }
     } else if (startTestingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
         currentPage = Page::Testing;
+    } 
+    
+    else if (numImageInputBox.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
+        numImageInputText.setString("|");
+        
+        // if (numImageInputText.getString() == "" || numImageInputText.getString() == "Image num: ") {
+            
+        // }
+    }
+
+    else if (testButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
+        
+        testModel();
+        userNumImageInput.clear();
+    }
+
+    else {
+        if (currentPage == Page::Testing) {
+            numImageInputText.setString("Image num: ");
+
+        }
+        
     }
 }
 
@@ -381,12 +508,18 @@ void App::drawMainMenu() {
     window.draw(updateVectorText);
     window.draw(vectorText);
 
+    window.draw(weightDecayText);
+    window.draw(learningRateText);
+
+    window.draw(hyperparametersBorder);
 
     window.draw(startTrainingButton);
     window.draw(startTrainingText);
 
     window.draw(startTestingButton);
     window.draw(startTestingText);
+
+
     
 }
 
@@ -422,16 +555,27 @@ void App::drawTrainingPage() {
     window.draw(trainingProgressText);
     window.draw(trainingProgressIndicator);
 
+
+    window.draw(metricInfoBorder);
+    window.draw(progressBarBorder);
+    window.draw(trainingLabelText);
 }
 
 void App::drawTestPage() {
-    window.draw(testResultText);
-    window.draw(startTrainingButton);
-    window.draw(startTestingButton);
+    window.draw(testTitle);
+    window.draw(numImageInputBox);
+    window.draw(numImageInputText);
+    window.draw(predictionText);
+    window.draw(testButton);
+    window.draw(testButtonText);
+
+
+
+    window.draw(testImageSprite);
+
 }
 
-sf::Image App::tensorToSFMLImage(const torch::Tensor& tensor) {
-    int scale_factor = 10; 
+sf::Image App::tensorToSFMLImage(const torch::Tensor& tensor, int scaleFactor) {
     auto img_tensor = tensor.cpu().detach();
     img_tensor = img_tensor.view({28, 28});
 
@@ -439,7 +583,7 @@ sf::Image App::tensorToSFMLImage(const torch::Tensor& tensor) {
     img.convertTo(img, CV_8UC1, 255.0);
 
     cv::Mat scaled_img;
-    cv::resize(img, scaled_img, cv::Size(), scale_factor, scale_factor, cv::INTER_NEAREST);
+    cv::resize(img, scaled_img, cv::Size(), scaleFactor, scaleFactor, cv::INTER_NEAREST);
 
     sf::Image image;
     image.create(scaled_img.cols, scaled_img.rows, scaled_img.ptr());
@@ -509,17 +653,17 @@ void App::trainModel() {
             epoch_loss += loss.item<double>();
 
             if (batchCount % 10 == 0 || batchCount == 591) {
-                sf::Image sfImage = tensorToSFMLImage(images[0].cpu()); // Retrieve the first image
+                sf::Image sfImage = tensorToSFMLImage(images[0].cpu(), 15); // Retrieve the first image
                 if (!imageTexture.loadFromImage(sfImage)) {
                     std::cout << "Failed to load texture from image." << std::endl;
                     continue;
                 }
                 imageSprite.setTexture(imageTexture);
-                imageSprite.setPosition(100.f, 100.f); // Adjust position as needed
+                imageSprite.setPosition(100.f, 50.f); 
                 
                 currentLossText.setString("Loss: " + std::to_string(epoch_loss / batchCount));
                 batchText.setString("Batch: " + std::to_string(batchCount));
-
+                trainingLabelText.setString("Predicted Label: " + std::to_string(outputs[0].argmax(0).item<int>()) + " Correct Label: " + std::to_string(labels[0].argmax(0).item<int>()));
                 render();
             }
         }
@@ -536,6 +680,7 @@ void App::trainModel() {
     double test_loss = 0.0;
     int correct = 0;
     int total = 0;
+    int image_count = 0;
 
     torch::NoGradGuard no_grad;
     for (const auto& batch : test_batches) {
@@ -552,6 +697,11 @@ void App::trainModel() {
 
         correct += predicted.eq(actual).sum().item<int>();
         total += labels.size(0);
+
+        // for (int i = 0; i < images.size(0); ++i) {
+        //     std::string filename = "image_" + std::to_string(image_count++) + ".png";
+        //     saveImageToFolder(images[i].cpu(), filename);
+        // }
     }
 
     std::cout << "Test Loss: " << test_loss / test_batches.size() << std::endl;
@@ -562,6 +712,68 @@ void App::trainModel() {
     
 }
 
+
+void App::testModel() {
+    KAN kan(modelStructure);
+    torch::load(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KAN.pt");
+    kan->to(device);
+    kan->eval();
+    
+    
+    std::string filepath = handleFilePath(userNumImageInput);
+    auto image_tensor = loadImageFromFolder(filepath);
+    sf::Image testsfImage = tensorToSFMLImage(image_tensor[0], 15);
+
+    testImageTexture.loadFromImage(testsfImage);
+    testImageSprite.setTexture(testImageTexture);
+    testImageSprite.setPosition(100.f, 200.f);
+    
+
+    auto outputs = kan->forward(image_tensor);
+    auto prediction = outputs.argmax(1).item<int>();
+
+    predictionText.setString("Prediction From Models: " + std::to_string(prediction));
+    render();
+}
+
+
+std::string App::handleFilePath(sf::String number) {
+    auto string = number.toAnsiString();
+    std::string file_path = "image_" + string + ".png";
+    return file_path;
+}
+
+
+
+
+
+
+void App::saveImageToFolder(const torch::Tensor& tensor, const std::string& filename) {
+    sf::Image sfImage = tensorToSFMLImage(tensor[0].cpu(), 1);
+    std::string filepath = "/Users/quannguyennam/Documents/Projects/KANS/testImage/" + filename;
+    if (!sfImage.saveToFile(filepath)) {
+        std::cout << "Failed to save image to " << filepath << std::endl;
+    } else {
+        std::cout << "Image saved to " << filepath << std::endl;
+    }
+}
+
+torch::Tensor App::loadImageFromFolder(const std::string& filename) {
+    std::string filepath = "/Users/quannguyennam/Documents/Projects/KANS/testImage/" + filename;
+    cv::Mat cvImage = cv::imread(filepath, cv::IMREAD_GRAYSCALE); 
+    if (cvImage.empty()) {
+        std::cerr << "Failed to load image from " << filepath << std::endl;
+        return torch::Tensor();
+    }
+
+    cv::resize(cvImage, cvImage, cv::Size(28, 28));
+
+    cv::Mat cvImageFloat;
+    cvImage.convertTo(cvImageFloat, CV_32F, 1.0 / 255.0);
+
+    torch::Tensor tensor = torch::from_blob(cvImageFloat.data, {1, 28 * 28}, torch::kFloat32); 
+    return tensor.clone(); 
+}
 
 
 
