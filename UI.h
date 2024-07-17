@@ -110,6 +110,8 @@ public:
     sf::RectangleShape numImageInputBox;
     sf::Text numImageInputText;
     
+    sf::Text imageNumberText;
+    sf::RectangleShape testingFrame;
 
     sf::RectangleShape testButton;
     sf::Text testButtonText;

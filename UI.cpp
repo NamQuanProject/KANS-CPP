@@ -300,8 +300,8 @@ App::App()
     predictionText.setPosition(180.f, 700.f);
 
 
-    numImageInputBox.setSize(sf::Vector2f(150, 30));
-    numImageInputBox.setPosition(800.f, 650.f);
+    numImageInputBox.setSize(sf::Vector2f(200, 30));
+    numImageInputBox.setPosition(700.f, 550.f);
     numImageInputBox.setFillColor(sf::Color::White);
 
     numImageInputText.setFont(font);
@@ -317,8 +317,8 @@ App::App()
         numImageInputBox.getPosition().y + numImageInputBox.getSize().y / 2.0f
     );
 
-    testButton.setSize(sf::Vector2f(200, 30));
-    testButton.setPosition(800.f, 700.f);
+    testButton.setSize(sf::Vector2f(400, 30));
+    testButton.setPosition(700.f, 700.f);
     testButton.setFillColor(sf::Color::White);
 
     testButtonText.setFont(font);
@@ -331,6 +331,20 @@ App::App()
         testButton.getPosition().x + testButton.getSize().x / 2.0f,
         testButton.getPosition().y + testButton.getSize().y / 2.0f
     );
+
+    imageNumberText.setFont(font);
+    imageNumberText.setCharacterSize(20);
+    imageNumberText.setString("Checking Image Number: ...");
+    imageNumberText.setPosition(700.f, 250.f);
+    
+
+    testingFrame.setSize(sf::Vector2f(450.f, 530.f));
+    testingFrame.setPosition(680.f, 230.f);
+    testingFrame.setFillColor(sf::Color::Transparent);
+    testingFrame.setOutlineThickness(5.f);
+    testingFrame.setOutlineColor(sf::Color::White);
+
+
 
     // SETUP CURRENT PAGE:
     currentPage = Page::MainMenu;
@@ -414,9 +428,12 @@ void App::handleButtonClick(const sf::Vector2i& mousePosition) {
     }
 
     else if (testButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
-        testModel();
-        userNumImageInput.clear();
-        numImageInputText.setString("Image num: ");
+        if (userNumImageInput.toAnsiString() != "") {
+            testModel();
+            userNumImageInput.clear();
+            numImageInputText.setString("Image num: ");
+        }
+        
     }
 
     else {
@@ -566,7 +583,8 @@ void App::drawTestPage() {
     window.draw(testButton);
     window.draw(testButtonText);
 
-
+    window.draw(testingFrame);
+    window.draw(imageNumberText);
 
     window.draw(testImageSprite);
 
