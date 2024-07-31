@@ -104,6 +104,7 @@ Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-pack
 Kans: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-graphics.2.6.1.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-network.2.6.1.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-audio.2.6.1.dylib
+Kans: /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/libpython3.9.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_imgcodecs.4.10.0.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_dnn.4.10.0.dylib
 Kans: /Users/quannguyennam/Documents/Projects/KANS/opencv/build/lib/libopencv_calib3d.4.10.0.dylib

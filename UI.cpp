@@ -1,5 +1,5 @@
 #include "UI.h"
-
+namespace plt = matplotlibcpp;
 
 std::string App::vectorToString(std::vector<int64_t>& vec) {
     std::ostringstream oss;
@@ -15,7 +15,7 @@ std::string App::vectorToString(std::vector<int64_t>& vec) {
 }
 
 App::App()
-    : window(sf::VideoMode(1200, 800), "Deep Learning Model Board"),
+    : window(sf::VideoMode(1200, 800), "Kolmogorov-Arnold Model Board"),
       epochs(15),
       currentEpoch(0),
       currentLoss(0.0),
@@ -285,7 +285,26 @@ App::App()
     progressBarBorder.setOutlineThickness(5.f);
     progressBarBorder.setOutlineThickness(5.f);
     progressBarBorder.setOutlineColor(sf::Color::White);
+    
 
+
+
+    /*-------------------------------------VISUALIZE THE MODEL STRUCTURE------------------------------------*/
+    visualizeModelButton.setSize(sf::Vector2f(200.f, 100.f));
+    visualizeModelButton.setPosition(100.f, 600.f);
+
+
+    visualizeModelButtonText.setFont(font);
+    visualizeModelButtonText.setFillColor(sf::Color::Blue);
+    visualizeModelButtonText.setString("Model Visulization");
+    visualizeModelButtonText.setCharacterSize(20);
+
+    sf::FloatRect visualizeModelButtonRec = visualizeModelButtonText.getLocalBounds();
+    visualizeModelButtonText.setOrigin(visualizeModelButtonRec.left + visualizeModelButtonRec.width / 2.0f, visualizeModelButtonRec.top + visualizeModelButtonRec.height / 2.0f);
+    visualizeModelButtonText.setPosition(
+        visualizeModelButton.getPosition().x + visualizeModelButton.getSize().x / 2.0f,
+        visualizeModelButton.getPosition().y + visualizeModelButton.getSize().y / 2.0f
+    );
 
     /*--------------------------------------------TESTING PARTS--------------------------------------------*/
     testTitle.setFont(font);
@@ -309,6 +328,8 @@ App::App()
     numImageInputText.setCharacterSize(20);
     numImageInputText.setFillColor(sf::Color::Black);
 
+    
+    
 
     sf::FloatRect numImageTextRect = numImageInputText.getLocalBounds();
     numImageInputText.setOrigin(numImageTextRect.left + numImageTextRect.width / 2.0f, numImageTextRect.top + numImageTextRect.height / 2.0f);
@@ -420,7 +441,13 @@ void App::handleButtonClick(const sf::Vector2i& mousePosition) {
         }
     } else if (startTestingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
         currentPage = Page::Testing;
-    } 
+    }
+    else if (visualizeModelButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Training) {
+        for (auto grid_vector: grid_vectors) {
+            plotVectors(grid_vectors);
+        }
+        
+    }  
     
     else if (numImageInputBox.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
         if (numImageInputText.getString() == "Image num: ") numImageInputText.setString("|");
@@ -550,7 +577,8 @@ void App::drawTrainingPage() {
     // FIRST IMAGE OF EACH BATCH:
     window.draw(imageSprite);
 
-    
+    window.draw(visualizeModelButton);
+    window.draw(visualizeModelButtonText);
 
     // MOVE TO TEST OR CONFIG SECTIONS:
     window.draw(startTestingButton);
@@ -616,6 +644,14 @@ sf::Image App::tensorToSFMLImage(const torch::Tensor& tensor, int scaleFactor) {
     return image;
 }
 
+sf::Image App::matToSFImage(const cv::Mat& mat) {
+    sf::Image image;
+    cv::Mat rgbMat;
+    cv::cvtColor(mat, rgbMat, cv::COLOR_GRAY2RGB); // Convert grayscale to RGB
+
+    image.create(rgbMat.cols, rgbMat.rows, rgbMat.ptr());
+    return image;
+}
 
 
 void App::trainModel() {
@@ -652,7 +688,7 @@ void App::trainModel() {
         int batchCount = 0;
         window.clear(); // Clear the window at the beginning of each epoch
         render(); // Render the cleared window
-
+        
         for (const auto& batch : train_batches) {
             batchCount++;
             auto images = batch.first.to(device);
@@ -668,7 +704,8 @@ void App::trainModel() {
             epoch_loss += loss.item<double>();
 
             if (batchCount % 10 == 0 || batchCount == 591) {
-                sf::Image sfImage = tensorToSFMLImage(images[0].cpu(), 15); // Retrieve the first image
+                std::vector<torch::Tensor> layer_grids;
+                sf::Image sfImage = tensorToSFMLImage(images[0].cpu(), 15); 
                 if (!imageTexture.loadFromImage(sfImage)) {
                     std::cout << "Failed to load texture from image." << std::endl;
                     continue;
@@ -679,6 +716,11 @@ void App::trainModel() {
                 currentLossText.setString("Loss: " + std::to_string(epoch_loss / batchCount));
                 batchText.setString("Batch: " + std::to_string(batchCount));
                 trainingLabelText.setString("Predicted Label: " + std::to_string(outputs[0].argmax(0).item<int>()) + " Correct Label: " + std::to_string(labels[0].argmax(0).item<int>()));
+                
+                grid_vectors.clear();
+                for (auto layer : kan->layers) {
+                    grid_vectors.push_back(layer->grid);
+                }
                 render();
             }
         }
@@ -728,6 +770,54 @@ void App::trainModel() {
 }
 
 
+
+
+std::vector<float> App::tensorToVector(const torch::Tensor& tensor) {
+    auto cpu_tensor = tensor.to(torch::kCPU).to(torch::kFloat32).contiguous();
+    std::vector<float> vec(cpu_tensor.data_ptr<float>(), cpu_tensor.data_ptr<float>() + cpu_tensor.numel());
+    return vec;
+}
+
+// Function to plot the vectors
+void App::plotVectors(const std::vector<torch::Tensor>& grid_vectors) {
+    int max_grids = 10;  
+    int num_features = std::min(static_cast<int>(grid_vectors.size()), max_grids);
+    int num_rows = static_cast<int>(std::ceil(std::sqrt(num_features)));
+    int num_cols = num_rows;
+
+    // Create a new figure
+    plt::figure_size(800, 800);
+
+    for (int i = 0; i < num_features; ++i) {
+        auto tensor = grid_vectors[i].cpu();
+        auto sizes = tensor.sizes();
+        int size = sizes[0];
+
+        // Convert tensor to std::vector<double>
+        std::vector<double> data(tensor.data_ptr<float>(), tensor.data_ptr<float>() + tensor.numel());
+
+        // Create a subplot for each grid
+        plt::subplot(num_rows, num_cols, i + 1);
+        plt::plot(data, "o-");
+        plt::plot(data, {{"markersize", "3"}, {"linewidth", "1"}});
+        plt::title("Feature " + std::to_string(i + 1), {{"fontsize", "8"}});
+        plt::ylim(*std::min_element(data.begin(), data.end()) - 0.5, *std::max_element(data.begin(), data.end()) + 0.5);
+        plt::grid(true);
+
+        // Setting tick params (only 1 argument for map)
+        plt::tick_params({{"axis", "both"}, {"which", "major"}, {"labelsize", "6"}});
+    }
+
+    // Turn off unused subplots
+    for (int j = num_features; j < num_rows * num_cols; ++j) {
+        plt::subplot(num_rows, num_cols, j + 1);
+        plt::axis("off");
+    }
+
+    plt::tight_layout();
+    plt::show();
+}
+
 void App::testModel() {
     KAN kan(modelStructure);
     torch::load(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KAN.pt");
@@ -757,9 +847,6 @@ std::string App::handleFilePath(sf::String number) {
     std::string file_path = "image_" + string + ".png";
     return file_path;
 }
-
-
-
 
 
 

@@ -398,6 +398,28 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/Users/quannguyennam/Documents/Projects/KANS/opencv/build][v4.10.0(4)]
+//Details about finding Python3
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/bin/python3.9][/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9][/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/libpython3.9.dylib][/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages/numpy/core/include][cfound components: Interpreter Development NumPy Development.Module Development.Embed ][v3.9.19()]
 //Details about finding Torch
 FIND_PACKAGE_MESSAGE_DETAILS_Torch:INTERNAL=[/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/lib/libtorch.dylib][/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include;/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include][v()]
+//Compiler reason failure
+_Python3_Compiler_REASON_FAILURE:INTERNAL=
+_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=fb32c8daecef8ba70d062fd09ad421c4
+_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=a54518e096c5759b68caf19f2153c218
+//Development reason failure
+_Python3_Development_REASON_FAILURE:INTERNAL=
+//Path to a program.
+_Python3_EXECUTABLE:INTERNAL=/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/bin/python3.9
+//Path to a file.
+_Python3_INCLUDE_DIR:INTERNAL=/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9
+//Python3 Properties
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;19;64;;cpython-39-darwin;abi3;/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9;/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9;/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages;/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=6f618b893e6c959df2390b6016b0c183
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
+//Path to a library.
+_Python3_LIBRARY_RELEASE:INTERNAL=/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/libpython3.9.dylib
+_Python3_NUMPY_SIGNATURE:INTERNAL=389b35156ab8fdf3222f607f6c5ec383
+//Path to a file.
+_Python3_NumPy_INCLUDE_DIR:INTERNAL=/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages/numpy/core/include
 

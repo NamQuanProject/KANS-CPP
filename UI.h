@@ -10,6 +10,8 @@
 #include <memory>
 #include <iostream>
 #include <sstream>
+#include "matplotlibcpp.h"
+
 
 class App {
 public:
@@ -98,6 +100,9 @@ public:
     sf::RectangleShape metricInfoBorder;
     sf::RectangleShape progressBarBorder;
 
+
+    sf::RectangleShape visualizeModelButton;
+    sf::Text visualizeModelButtonText;
     // TESTING 
     sf::Text testTitle;
     sf::Text userNumImageText;
@@ -120,6 +125,9 @@ public:
     void saveImageToFolder(const torch::Tensor& tensor, const std::string& filename);
     torch::Tensor loadImageFromFolder(const std::string& filename);
     std::string handleFilePath(sf::String number);
+    sf::Image matToSFImage(const cv::Mat& mat);
+    std::vector<float> tensorToVector(const torch::Tensor& tensor);
+    void plotVectors(const std::vector<torch::Tensor>& grid_vectors);
 
 
     int epochs;
@@ -133,6 +141,8 @@ public:
     std::vector<std::pair<torch::Tensor, torch::Tensor>> train_batches;
     std::vector<std::pair<torch::Tensor, torch::Tensor>> test_batches;
     std::string vectorToString(std::vector<int64_t>& vec);
+    std::vector<torch::Tensor> grid_vectors;
+    
 
 
 };

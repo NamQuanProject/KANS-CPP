@@ -16,7 +16,7 @@ KANImpl::KANImpl(
    spline_order(spline_order) {
 
 
-   for (size_t i = 0; i < layers_hidden.size() - 1; ++i) {
+    for (size_t i = 0; i < layers_hidden.size() - 1; ++i) {
        layers.push_back(
            register_module( "layer" + std::to_string(i),
                KANLinear(
@@ -33,8 +33,9 @@ KANImpl::KANImpl(
                    grid_range)
            )
        );
-   }
+    }
 }
+
 
 
 torch::Tensor KANImpl::forward(torch::Tensor x, bool update_grid) {
