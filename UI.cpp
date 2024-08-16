@@ -1,4 +1,5 @@
 #include "UI.h"
+#include <algorithm> 
 namespace plt = matplotlibcpp;
 
 std::string App::vectorToString(std::vector<int64_t>& vec) {
@@ -14,14 +15,21 @@ std::string App::vectorToString(std::vector<int64_t>& vec) {
     return oss.str();
 }
 
+
+
+
+
+
+
+
 App::App()
     : window(sf::VideoMode(1200, 800), "Kolmogorov-Arnold Model Board"),
-      epochs(15),
+      epochs(5),
       currentEpoch(0),
       currentLoss(0.0),
       modelStructure({784, 64, 10}),
       device(torch::cuda::is_available() ? torch::kCUDA : torch::kCPU),
-      dataPath("../data/train.csv")  {
+      dataPath("/Users/quannguyennam/Documents/Projects/KANS/data/train.csv")  {
 
     font.loadFromFile("/Users/quannguyennam/Documents/Projects/KANS/arial/ARIALBD.TTF");
 
@@ -37,16 +45,14 @@ App::App()
     
     
 
-
     // MAIN PAGE:
     // EPOCH ADJUSTMENTS:
-
     // TITLE
     title.setFont(font);
-    title.setString("KANs Training Hyperparamers Settings");
+    title.setString("KANs MNIST Training Hyperparamers Settings");
     title.setCharacterSize(30);
     title.setFillColor(sf::Color::White);
-    title.setPosition(360.f, 50.f);
+    title.setPosition(300.f, 50.f);
 
 
     epochText.setCharacterSize(25);
@@ -84,6 +90,7 @@ App::App()
         decreaseEpochButton.getPosition().x + decreaseEpochButton.getSize().x / 2.0f,
         decreaseEpochButton.getPosition().y + decreaseEpochButton.getSize().y / 2.0f
     );
+
     // Hyperparameter 
     learningRateText.setFont(font);
     learningRateText.setString("Learning Rate: " + std::to_string(learningRate));
@@ -145,13 +152,13 @@ App::App()
     hyperparametersBorder.setOutlineColor(sf::Color::White);
 
     /*-----------------------------------------START TRAINING AND TEST BUTTONS--------------------------------------------*/
-    startTrainingButton.setSize(sf::Vector2f(200, 50));
-    startTrainingButton.setPosition(400.f, 700.f);
+    startTrainingButton.setSize(sf::Vector2f(210, 50));
+    startTrainingButton.setPosition(200.f, 700.f);
 
     
     startTrainingText.setFont(font);
     startTrainingText.setFillColor(sf::Color::Blue);
-    startTrainingText.setString("Start Training: ");
+    startTrainingText.setString("Start MNIST Training");
     startTrainingText.setCharacterSize(20);
 
     sf::FloatRect trainingTextRect = startTrainingText.getLocalBounds();
@@ -159,15 +166,15 @@ App::App()
     startTrainingText.setPosition(
         startTrainingButton.getPosition().x + startTrainingButton.getSize().x / 2.0f,
         startTrainingButton.getPosition().y + startTrainingButton.getSize().y / 2.0f
-    );
+    ); 
 
-    
+
     startTestingButton.setSize(sf::Vector2f(200, 50));
-    startTestingButton.setPosition(650.f, 700.f);
+    startTestingButton.setPosition(880.f, 700.f);
 
     startTestingText.setFont(font);
     startTestingText.setFillColor(sf::Color::Blue);
-    startTestingText.setString("Start Testing");
+    startTestingText.setString("Start MNIST Testing");
     startTestingText.setCharacterSize(20);
 
     sf::FloatRect testingTextRect = startTestingText.getLocalBounds();
@@ -175,6 +182,21 @@ App::App()
     startTestingText.setPosition(
         startTestingButton.getPosition().x + startTestingButton.getSize().x / 2.0f,
         startTestingButton.getPosition().y + startTestingButton.getSize().y / 2.0f
+    );
+
+    functionTestingButton.setSize(sf::Vector2f(300, 50));
+    functionTestingButton.setPosition(480.f, 700.f);
+
+    functionTestingText.setFont(font);
+    functionTestingText.setFillColor(sf::Color::Blue);
+    functionTestingText.setString("Complex Function Training");
+    functionTestingText.setCharacterSize(20);
+
+    sf::FloatRect functionTestingTextRect = functionTestingText.getLocalBounds();
+    functionTestingText.setOrigin(functionTestingTextRect.left + functionTestingTextRect.width / 2.0f, functionTestingTextRect.top + functionTestingTextRect.height / 2.0f);
+    functionTestingText.setPosition(
+        functionTestingButton.getPosition().x + functionTestingButton.getSize().x / 2.0f,
+        functionTestingButton.getPosition().y + functionTestingButton.getSize().y / 2.0f
     );
 
 
@@ -205,7 +227,6 @@ App::App()
     currentLossText.setString("Loss: 0.0");
     currentLossText.setCharacterSize(20);
     currentLossText.setPosition(700.f, 170.f);
-
 
 
     trainingLabelText.setFont(font);
@@ -254,7 +275,7 @@ App::App()
 
 
     configBoardButton.setSize(sf::Vector2f(200, 50));
-    configBoardButton.setPosition(400.f, 700.f);
+    configBoardButton.setPosition(650.f, 700.f);
 
 
     configBoardText.setFont(font);
@@ -289,22 +310,8 @@ App::App()
 
 
 
-    /*-------------------------------------VISUALIZE THE MODEL STRUCTURE------------------------------------*/
-    visualizeModelButton.setSize(sf::Vector2f(200.f, 100.f));
-    visualizeModelButton.setPosition(100.f, 600.f);
+    
 
-
-    visualizeModelButtonText.setFont(font);
-    visualizeModelButtonText.setFillColor(sf::Color::Blue);
-    visualizeModelButtonText.setString("Model Visulization");
-    visualizeModelButtonText.setCharacterSize(20);
-
-    sf::FloatRect visualizeModelButtonRec = visualizeModelButtonText.getLocalBounds();
-    visualizeModelButtonText.setOrigin(visualizeModelButtonRec.left + visualizeModelButtonRec.width / 2.0f, visualizeModelButtonRec.top + visualizeModelButtonRec.height / 2.0f);
-    visualizeModelButtonText.setPosition(
-        visualizeModelButton.getPosition().x + visualizeModelButton.getSize().x / 2.0f,
-        visualizeModelButton.getPosition().y + visualizeModelButton.getSize().y / 2.0f
-    );
 
     /*--------------------------------------------TESTING PARTS--------------------------------------------*/
     testTitle.setFont(font);
@@ -313,14 +320,24 @@ App::App()
     testTitle.setFillColor(sf::Color::White);
     testTitle.setPosition(450.f, 100.f);
 
+    imageNumberText.setFont(font);
+    imageNumberText.setCharacterSize(20);
+    imageNumberText.setString("Checking Image Number: ... ");
+    imageNumberText.setPosition(700.f, 250.f);
+
     predictionText.setFont(font); 
     predictionText.setCharacterSize(20); 
     predictionText.setFillColor(sf::Color::White); 
     predictionText.setPosition(180.f, 700.f);
 
+    numTestImage.setFont(font); 
+    numTestImage.setCharacterSize(20); 
+    numTestImage.setFillColor(sf::Color::White); 
+    numTestImage.setPosition(920.f, 300.f);
+    numTestImage.setString("/4199");
 
     numImageInputBox.setSize(sf::Vector2f(200, 30));
-    numImageInputBox.setPosition(700.f, 550.f);
+    numImageInputBox.setPosition(700.f, 300.f);
     numImageInputBox.setFillColor(sf::Color::White);
 
     numImageInputText.setFont(font);
@@ -328,7 +345,6 @@ App::App()
     numImageInputText.setCharacterSize(20);
     numImageInputText.setFillColor(sf::Color::Black);
 
-    
     
 
     sf::FloatRect numImageTextRect = numImageInputText.getLocalBounds();
@@ -338,8 +354,30 @@ App::App()
         numImageInputBox.getPosition().y + numImageInputBox.getSize().y / 2.0f
     );
 
-    testButton.setSize(sf::Vector2f(400, 30));
-    testButton.setPosition(700.f, 700.f);
+    
+
+
+    returnConfigButton.setSize(sf::Vector2f(200, 50));
+    returnConfigButton.setPosition(800.f, 700.f);
+    returnConfigButton.setFillColor(sf::Color::White);
+
+    returnConfigButtonText.setFont(font);
+    returnConfigButtonText.setString("Config Board");
+    returnConfigButtonText.setCharacterSize(20);
+    returnConfigButtonText.setFillColor(sf::Color::Black);
+
+    
+
+    sf::FloatRect returnConfigButtonTextRect = returnConfigButtonText.getLocalBounds();
+    returnConfigButtonText.setOrigin(returnConfigButtonTextRect .left + returnConfigButtonTextRect.width / 2.0f, returnConfigButtonTextRect.top + returnConfigButtonTextRect.height / 2.0f);
+    returnConfigButtonText.setPosition(
+        returnConfigButton.getPosition().x + returnConfigButton.getSize().x / 2.0f,
+        returnConfigButton.getPosition().y + returnConfigButton.getSize().y / 2.0f
+    );
+
+
+    testButton.setSize(sf::Vector2f(200, 35));
+    testButton.setPosition(700.f, 350.f);
     testButton.setFillColor(sf::Color::White);
 
     testButtonText.setFont(font);
@@ -353,10 +391,7 @@ App::App()
         testButton.getPosition().y + testButton.getSize().y / 2.0f
     );
 
-    imageNumberText.setFont(font);
-    imageNumberText.setCharacterSize(20);
-    imageNumberText.setString("Checking Image Number: ...");
-    imageNumberText.setPosition(700.f, 250.f);
+    
     
 
     testingFrame.setSize(sf::Vector2f(450.f, 530.f));
@@ -369,17 +404,197 @@ App::App()
 
     // SETUP CURRENT PAGE:
     currentPage = Page::MainMenu;
+    
+    /*-------------------------------------------FUNCTION TESTING------------------------------------------*/
+    /*------------------------------------VISUALIZE THE MODEL STRUCTURE------------------------------------*/
+    functionIndex = 0;
+    functions = {
+        "f(x) = exp(sin(Pi * x) + y^2)",
+        "f(x) = x^2 + y^2",
+        "f(x) = sin(x) * cos(y)",
+        "f(x) = tanh(x + y)",
+    };
+    functionsStructure = {
+        {2, 5, 1},
+        {2, 5, 1},
+        {2, 5, 1},
+        {2, 5, 1},
+    };
+
+    functionMenuText.setFont(font);
+    functionMenuText.setCharacterSize(20);
+    functionMenuText.setFillColor(sf::Color::White);
+    functionMenuText.setString("Functions:");
+    functionMenuText.setPosition(700.f, 250.f);
+
+    functionTestTitle.setFont(font);
+    functionTestTitle.setString("Complex Functions Test");
+    functionTestTitle.setCharacterSize(30);
+    functionTestTitle.setFillColor(sf::Color::White);
+    functionTestTitle.setPosition(450.f, 50.f);
+    
+    functionText.setFont(font);
+    functionText.setCharacterSize(20);
+    functionText.setString(functions[functionIndex]);
+    functionText.setPosition(700.f, 300.f);
+
+    functionStructureText.setFont(font);
+    functionStructureText.setCharacterSize(20);
+    functionStructureText.setString(vectorToString(functionsStructure[functionIndex]));
+    functionStructureText.setPosition(700.f, 400.f);
+
+
+    changeFuntionButton.setSize(sf::Vector2f(200, 30));
+    changeFuntionButton.setPosition(700.f, 350.f);
+    changeFuntionButton.setFillColor(sf::Color::White);
+
+    changeFuntionButtonText.setFont(font);
+    changeFuntionButtonText.setString("Change function");
+    changeFuntionButtonText.setCharacterSize(20);
+    changeFuntionButtonText.setFillColor(sf::Color::Black);
+    sf::FloatRect changeFuntionButtonRect = changeFuntionButtonText.getLocalBounds();
+    changeFuntionButtonText.setOrigin(changeFuntionButtonRect.left + changeFuntionButtonRect.width / 2.0f, changeFuntionButtonRect.top + changeFuntionButtonRect.height / 2.0f);
+    changeFuntionButtonText.setPosition(
+        changeFuntionButton.getPosition().x + changeFuntionButton.getSize().x / 2.0f,
+        changeFuntionButton.getPosition().y + changeFuntionButton.getSize().y / 2.0f
+    );
+
+
+    trainFunctionButton.setSize(sf::Vector2f(200, 50));
+    trainFunctionButton.setPosition(350.f, 700.f);
+    trainFunctionButton.setFillColor(sf::Color::White);
+    
+    trainFunctionButtonText.setFont(font);
+    trainFunctionButtonText.setString("Train f(x)");
+    trainFunctionButtonText.setCharacterSize(20);
+    trainFunctionButtonText.setFillColor(sf::Color::Black);
+
+    sf::FloatRect trainFunctionButtonRect = trainFunctionButtonText.getLocalBounds();
+
+    trainFunctionButtonText.setOrigin(trainFunctionButtonRect.left + trainFunctionButtonRect.width / 2.0f, trainFunctionButtonRect.top + trainFunctionButtonRect.height / 2.0f);
+    trainFunctionButtonText.setPosition(
+        trainFunctionButton.getPosition().x + trainFunctionButton.getSize().x / 2.0f,
+        trainFunctionButton.getPosition().y + trainFunctionButton.getSize().y / 2.0f
+    );
+
+
+    returnMainMenuButton.setSize(sf::Vector2f(200, 50));
+    returnMainMenuButton.setPosition(100.f, 700.f);
+    returnMainMenuButton.setFillColor(sf::Color::White);
+    
+    returnMainMenuButtonText.setFont(font);
+    returnMainMenuButtonText.setString("Config Board");
+    returnMainMenuButtonText.setCharacterSize(20);
+    returnMainMenuButtonText.setFillColor(sf::Color::Black);
+
+    sf::FloatRect returnMainMenuButtonRect = returnMainMenuButtonText.getLocalBounds();
+
+    returnMainMenuButtonText.setOrigin(returnMainMenuButtonRect.left + returnMainMenuButtonRect.width / 2.0f, returnMainMenuButtonRect.top + returnMainMenuButtonRect.height / 2.0f);
+    returnMainMenuButtonText.setPosition(
+        returnMainMenuButton.getPosition().x + returnMainMenuButton.getSize().x / 2.0f,
+        returnMainMenuButton.getPosition().y + returnMainMenuButton.getSize().y / 2.0f
+    );
+
+
+    xTitle.setFont(font);
+    xTitle.setString("X:");
+    xTitle.setCharacterSize(30);
+    xTitle.setFillColor(sf::Color::White);
+    xTitle.setPosition(700.f, 450.f);
+
+    xBox.setSize(sf::Vector2f(100, 50));
+    xBox.setPosition(750.f, 450.f);
+    returnMainMenuButton.setFillColor(sf::Color::White);
+    
+    xText.setFont(font);
+    xText.setString("Input x");
+    xText.setCharacterSize(20);
+    xText.setFillColor(sf::Color::Black);
+
+    sf::FloatRect xTextRect = xText.getLocalBounds();
+
+    xText.setOrigin(xTextRect.left + xTextRect.width / 2.0f, xTextRect.top + xTextRect.height / 2.0f);
+    xText.setPosition(
+        xBox.getPosition().x + xBox.getSize().x / 2.0f,
+        xBox.getPosition().y + xBox.getSize().y / 2.0f
+    );
+
+
+    yTitle.setFont(font);
+    yTitle.setString("Y: ");
+    yTitle.setCharacterSize(30);
+    yTitle.setFillColor(sf::Color::White);
+    yTitle.setPosition(700.f, 550.f);
+
+    yBox.setSize(sf::Vector2f(100, 50));
+    yBox.setPosition(750.f, 550.f);
+    returnMainMenuButton.setFillColor(sf::Color::White);
+    
+    yText.setFont(font);
+    yText.setString("Input y");
+    yText.setCharacterSize(20);
+    yText.setFillColor(sf::Color::Black);
+
+    sf::FloatRect yTextRect = xText.getLocalBounds();
+
+    yText.setOrigin(yTextRect.left + yTextRect.width / 2.0f, yTextRect.top + yTextRect.height / 2.0f);
+    yText.setPosition(
+        yBox.getPosition().x + yBox.getSize().x / 2.0f,
+        yBox.getPosition().y + yBox.getSize().y / 2.0f
+    );
+
+
+    testFunctionButton.setSize(sf::Vector2f(120, 30));
+    testFunctionButton.setPosition(700.f, 650.f);
+    testFunctionButton.setFillColor(sf::Color::White);
+    
+    testFunctionButtonText.setFont(font);
+    testFunctionButtonText.setString("Test");
+    testFunctionButtonText.setCharacterSize(20);
+    testFunctionButtonText.setFillColor(sf::Color::Black);
+
+    sf::FloatRect testFunctionButtonRect = testFunctionButtonText.getLocalBounds();
+
+    testFunctionButtonText.setOrigin(testFunctionButtonRect.left + testFunctionButtonRect.width / 2.0f, testFunctionButtonRect.top + testFunctionButtonRect.height / 2.0f);
+    testFunctionButtonText.setPosition(
+        testFunctionButton.getPosition().x + testFunctionButton.getSize().x / 2.0f,
+        testFunctionButton.getPosition().y + testFunctionButton.getSize().y / 2.0f
+    );
+
+
+    functionPredictionText.setFont(font);
+    functionPredictionText.setString("Prediction:");
+    functionPredictionText.setCharacterSize(20);
+    functionPredictionText.setFillColor(sf::Color::White);
+    functionPredictionText.setPosition(870.f, 450.f);
+    
+    
+    functionRealResultText.setFont(font);
+    functionRealResultText.setString("Real Result:");
+    functionRealResultText.setCharacterSize(20);
+    functionRealResultText.setFillColor(sf::Color::White);
+    functionRealResultText.setPosition(870.f, 550.f);
+
+
 }
 
+
+
+
+
+
+
+
+
 void App::resetParameters() {
-    epochs = 15;
+    epochs = 5;
     currentEpoch = 0;
     epochText.setString("Epochs:"  + std::to_string(epochs));
     currentEpochText.setString("Epochs: " + std::to_string(currentEpoch));
+    vectorText.setString("Model Structure:  " + vectorToString(modelStructure));
     batchText.setString("Batch: 0");
     currentLoss = 0.0;
     currentLossText.setString("Current Loss: " + std::to_string(currentLoss));
-    modelStructure = {784, 64, 10};
     accuracyText.setString("Accuracy: 0.0%");
     dataProgressText.setString("Data process: 0%");
     trainingProgressIndicator.setSize(sf::Vector2f(0, 0));
@@ -415,6 +630,29 @@ void App::handleTextInput(const sf::Event& event) {
                 numImageInputText.setString(userNumImageInput.toAnsiString() + "|");
             }
         }
+        else if (currentPage == Page::FunctionTrain) {
+            if (whichInput == 0) {
+                if (event.text.unicode == '\b' && xInput.getSize() > 0) { 
+                    xInput.erase(xInput.getSize() - 1, 1);
+                    xText.setString(xInput.toAnsiString());
+                
+                } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
+                    xInput += static_cast<char>(event.text.unicode);
+                    xText.setString(xInput.toAnsiString());
+                }
+            }
+            else if (whichInput == 1){
+                if (event.text.unicode == '\b' && yInput.getSize() > 0) { 
+                    yInput.erase(yInput.getSize() - 1, 1);
+                    yText.setString(yInput.toAnsiString());
+                
+                } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
+                    yInput += static_cast<char>(event.text.unicode);
+                    yText.setString(yInput.toAnsiString());
+                }
+            }
+            
+        }
         
     }
 }
@@ -430,29 +668,45 @@ void App::handleButtonClick(const sf::Vector2i& mousePosition) {
         structureInputText.setString("|");
     } else if (updateVectorButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::MainMenu) {
         updateModelStructure();
-    } else if (configBoardButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage != Page::MainMenu) {
+    } else if (configBoardButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
         resetParameters();
         currentPage = Page::MainMenu;
-        
+    
+    } else if (returnConfigButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing){
+        currentPage = Page::MainMenu;
+
     } else if (startTrainingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::MainMenu) {
         if (currentPage == Page::MainMenu) {
             currentPage = Page::Training;
             trainModel();
         }
-    } else if (startTestingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y)) {
+    } else if (startTestingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && (currentPage == Page::Training || currentPage == Page::MainMenu)) {
         currentPage = Page::Testing;
     }
-    else if (visualizeModelButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Training) {
-        for (auto grid_vector: grid_vectors) {
-            plotVectors(grid_vectors);
-        }
-        
-    }  
-    
+    else if (returnMainMenuButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::FunctionTrain) {
+        currentPage = Page::MainMenu;
+    }
+    else if (functionTestingButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::MainMenu) {
+        currentPage = Page::FunctionTrain;
+    }
+    else if (trainFunctionButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::FunctionTrain) {
+        trainFunction();
+    }
     else if (numImageInputBox.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
         if (numImageInputText.getString() == "Image num: ") numImageInputText.setString("|");
         
     }
+    else if (xBox.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::FunctionTrain) {
+        whichInput = 0;
+        xText.setString("|");
+        xInput.clear();
+    }
+    else if (yBox.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::FunctionTrain) {
+        whichInput = 1;
+        yText.setString("|");
+        yInput.clear();
+    }
+
 
     else if (testButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::Testing) {
         if (userNumImageInput.toAnsiString() != "") {
@@ -462,11 +716,36 @@ void App::handleButtonClick(const sf::Vector2i& mousePosition) {
         }
         
     }
+    else if (testFunctionButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::FunctionTrain) {
+        float x = convertTextToFloat(xText);
+        float y = convertTextToFloat(yText);
+        predictFunction(x,y);
+    }
+    else if (changeFuntionButton.getGlobalBounds().contains(mousePosition.x, mousePosition.y) && currentPage == Page::FunctionTrain) {
+        functionIndex++;
+        if (functionIndex >= functions.size()) {
+            functionIndex = 0;
+        }
+        functionText.setString(functions[functionIndex]);
+        functionStructureText.setString(vectorToString(functionsStructure[functionIndex]));
+    }
 
     else {
         if (currentPage == Page::Testing) {
             numImageInputText.setString("Image num: ");
             userNumImageInput.clear();
+        }
+        if (currentPage == Page::MainMenu) {
+            structureInputText.setString("Structure Input");
+            userStructureInput.clear();
+
+        }
+        if (currentPage == Page::FunctionTrain) {
+            whichInput = -1;
+            xText.setString("Input x");
+            yText.setString("Input y");
+            xInput.clear();
+            yInput.clear();
         }
         
     }
@@ -477,11 +756,9 @@ void App::updateModelStructure() {
 
     std::string inputString = userStructureInput.toAnsiString();
 
-    // Tokenize the inputString by comma
     std::istringstream iss(inputString);
     std::string token;
     while (std::getline(iss, token, ',')) {
-        // Convert token to int and add to modelStructure
         try {
             int value = std::stoi(token);
             modelStructure.push_back(value);
@@ -491,7 +768,7 @@ void App::updateModelStructure() {
             std::cerr << "Out of range input: " << token << std::endl;
         }
     }
-    structureInputText.setString(vectorToString(modelStructure));
+    structureInputText.setString("Structure Input");
     vectorText.setString("Model Structure:  " + vectorToString(modelStructure));
     userStructureInput.clear();
 }
@@ -514,7 +791,6 @@ void App::processEvents() {
 
 void App::render() {
     window.clear();
-
     window.draw(backgroundSprite);
     switch (currentPage) {
         case Page::MainMenu:
@@ -526,6 +802,10 @@ void App::render() {
         case Page::Testing:
             drawTestPage();
             break;
+        case Page::FunctionTrain:
+            drawFunctionPage();
+            break;
+        
     }
     window.display();
 }
@@ -560,7 +840,8 @@ void App::drawMainMenu() {
     window.draw(startTestingButton);
     window.draw(startTestingText);
 
-
+    window.draw(functionTestingButton);
+    window.draw(functionTestingText);
     
 }
 
@@ -577,8 +858,7 @@ void App::drawTrainingPage() {
     // FIRST IMAGE OF EACH BATCH:
     window.draw(imageSprite);
 
-    window.draw(visualizeModelButton);
-    window.draw(visualizeModelButtonText);
+
 
     // MOVE TO TEST OR CONFIG SECTIONS:
     window.draw(startTestingButton);
@@ -597,7 +877,7 @@ void App::drawTrainingPage() {
     window.draw(trainingProgressText);
     window.draw(trainingProgressIndicator);
 
-
+    
     window.draw(metricInfoBorder);
     window.draw(progressBarBorder);
     window.draw(trainingLabelText);
@@ -610,13 +890,47 @@ void App::drawTestPage() {
     window.draw(predictionText);
     window.draw(testButton);
     window.draw(testButtonText);
+    window.draw(numTestImage);
+
+    window.draw(returnConfigButton);
+    window.draw(returnConfigButtonText);
 
     window.draw(testingFrame);
     window.draw(imageNumberText);
 
     window.draw(testImageSprite);
 
+    
 }
+
+
+void App::drawFunctionPage() {
+    window.draw(functionText);
+    window.draw(changeFuntionButton);
+    window.draw(changeFuntionButtonText);
+    window.draw(functionStructureText);
+    window.draw(trainFunctionButton);
+    window.draw(trainFunctionButtonText);
+    window.draw(functionTestTitle);
+    window.draw(functionMenuText);
+
+    window.draw(modelStructureSprite);
+    window.draw(testingFrame);
+    window.draw(returnMainMenuButton);
+    window.draw(returnMainMenuButtonText);
+    window.draw(yBox);
+    window.draw(xBox);
+    window.draw(xText);
+    window.draw(yText);
+    window.draw(xTitle);
+    window.draw(yTitle);
+    window.draw(testFunctionButton);
+    window.draw(testFunctionButtonText);
+    window.draw(functionPredictionText);
+    window.draw(functionRealResultText);
+}
+
+
 
 sf::Image App::tensorToSFMLImage(const torch::Tensor& tensor, int scaleFactor) {
     auto img_tensor = tensor.cpu().detach();
@@ -647,7 +961,7 @@ sf::Image App::tensorToSFMLImage(const torch::Tensor& tensor, int scaleFactor) {
 sf::Image App::matToSFImage(const cv::Mat& mat) {
     sf::Image image;
     cv::Mat rgbMat;
-    cv::cvtColor(mat, rgbMat, cv::COLOR_GRAY2RGB); // Convert grayscale to RGB
+    cv::cvtColor(mat, rgbMat, cv::COLOR_GRAY2RGB);
 
     image.create(rgbMat.cols, rgbMat.rows, rgbMat.ptr());
     return image;
@@ -686,9 +1000,9 @@ void App::trainModel() {
         kan->train();
         double epoch_loss = 0.0;
         int batchCount = 0;
-        window.clear(); // Clear the window at the beginning of each epoch
-        render(); // Render the cleared window
-        
+        window.clear(); 
+        render(); 
+
         for (const auto& batch : train_batches) {
             batchCount++;
             auto images = batch.first.to(device);
@@ -755,6 +1069,7 @@ void App::trainModel() {
         correct += predicted.eq(actual).sum().item<int>();
         total += labels.size(0);
 
+        // SAVING TEST IMAGES:
         // for (int i = 0; i < images.size(0); ++i) {
         //     std::string filename = "image_" + std::to_string(image_count++) + ".png";
         //     saveImageToFolder(images[i].cpu(), filename);
@@ -766,56 +1081,6 @@ void App::trainModel() {
     accuracyText.setString("Accuracy: " + std::to_string(static_cast<double>(correct) / total * 100.0) + "%");
     torch::save(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KAN.pt");
     render();
-    
-}
-
-
-
-
-std::vector<float> App::tensorToVector(const torch::Tensor& tensor) {
-    auto cpu_tensor = tensor.to(torch::kCPU).to(torch::kFloat32).contiguous();
-    std::vector<float> vec(cpu_tensor.data_ptr<float>(), cpu_tensor.data_ptr<float>() + cpu_tensor.numel());
-    return vec;
-}
-
-// Function to plot the vectors
-void App::plotVectors(const std::vector<torch::Tensor>& grid_vectors) {
-    int max_grids = 10;  
-    int num_features = std::min(static_cast<int>(grid_vectors.size()), max_grids);
-    int num_rows = static_cast<int>(std::ceil(std::sqrt(num_features)));
-    int num_cols = num_rows;
-
-    // Create a new figure
-    plt::figure_size(800, 800);
-
-    for (int i = 0; i < num_features; ++i) {
-        auto tensor = grid_vectors[i].cpu();
-        auto sizes = tensor.sizes();
-        int size = sizes[0];
-
-        // Convert tensor to std::vector<double>
-        std::vector<double> data(tensor.data_ptr<float>(), tensor.data_ptr<float>() + tensor.numel());
-
-        // Create a subplot for each grid
-        plt::subplot(num_rows, num_cols, i + 1);
-        plt::plot(data, "o-");
-        plt::plot(data, {{"markersize", "3"}, {"linewidth", "1"}});
-        plt::title("Feature " + std::to_string(i + 1), {{"fontsize", "8"}});
-        plt::ylim(*std::min_element(data.begin(), data.end()) - 0.5, *std::max_element(data.begin(), data.end()) + 0.5);
-        plt::grid(true);
-
-        // Setting tick params (only 1 argument for map)
-        plt::tick_params({{"axis", "both"}, {"which", "major"}, {"labelsize", "6"}});
-    }
-
-    // Turn off unused subplots
-    for (int j = num_features; j < num_rows * num_cols; ++j) {
-        plt::subplot(num_rows, num_cols, j + 1);
-        plt::axis("off");
-    }
-
-    plt::tight_layout();
-    plt::show();
 }
 
 void App::testModel() {
@@ -879,7 +1144,318 @@ torch::Tensor App::loadImageFromFolder(const std::string& filename) {
 
 
 
+std::vector<std::pair<std::vector<float>, std::vector<float>>> App::get_positions(const std::vector<int>& structure, const float initial_spacing = 1.25, const float spacing_increment = 0.35) {
+    std::vector<std::pair<std::vector<float>, std::vector<float>>> positions;
+    std::vector<float> y_offsets;
+    for (int i = 0; i < structure.size(); ++i) {
+        y_offsets.push_back(1 - 2.0 * i / (structure.size() - 1));
+    }
+    
+    for (int i = 0; i < structure.size(); ++i) {
+        float spacing = (i % 2 == 0) ? (initial_spacing - i * spacing_increment + 1.0) : (initial_spacing - i * 2 * spacing_increment + 2.0);
+        std::vector<float> x_positions;
+        std::vector<float> y_positions(structure[i], y_offsets[i]);
+        if (structure[i] == 1) {
+            x_positions.push_back(0);
+        } else {
+            for (int j = 0; j < structure[i]; ++j) {
+                x_positions.push_back(-spacing + j * 2 * spacing / (structure[i] - 1));
+            }
+        }
+        positions.emplace_back(x_positions, y_positions);
+    }
+    
+    return positions;
+}
+
+
+void App::draw_square(float x, float y, float size, const std::vector<float>& vector) {
+    std::vector<double> square_x = {x - size / 2, x + size / 2, x + size / 2, x - size / 2, x - size / 2};
+    std::vector<double> square_y = {y - size / 2, y - size / 2, y + size / 2, y + size / 2, y - size / 2};
+    plt::plot(square_x, square_y, "k-");  
+
+    
+    if (!vector.empty()) {
+        size_t num_points = vector.size();
+        std::vector<double> x_positions(num_points);
+        std::vector<double> y_positions(num_points);
+
+        double max_abs_val = *std::max_element(vector.begin(), vector.end(), [](double a, double b) {
+            return std::abs(a) < std::abs(b);
+        });
+
+        std::vector<double> normalized_vector(num_points);
+        for (size_t i = 0; i < num_points; ++i) {
+            normalized_vector[i] = vector[i] / max_abs_val;
+        }
+
+        for (size_t i = 0; i < num_points; ++i) {
+            x_positions[i] = x - size / 2 + i * size / (num_points - 1);
+            y_positions[i] = y + normalized_vector[i] * size / 2;
+        }
+
+        plt::plot(x_positions, y_positions, "b-");  
+    }
+}
 
 
 
+std::vector<std::vector<std::vector<float>>> App::getModelGrid(KAN& kans) {
+    /* (LAYERS, LAYERS NODES NUMBER , GRID SIZE AFTER CALCULATIONS) */
+    std::vector<torch::Tensor> spline_vectors;
+    for (auto layer : kans->layers) {
+        int64_t size = layer->spline_weight.size(-1);
+        torch::Tensor reshaped_tensor = layer->spline_weight.view({-1, size});
+        spline_vectors.push_back(reshaped_tensor);
+    }
+    
+    std::vector<std::vector<std::vector<float>>> batch_vectors;
+    for (auto grid_vector: spline_vectors) {
+        std::vector<std::vector<float>> batch_vector = batchToVectors(grid_vector);
+        batch_vectors.push_back(batch_vector);
+    }
+    
+    return batch_vectors;
+}
 
+
+void App::trainFunction() {
+    std::vector<int> structure = {1, 5, 5, 10, 2};
+    std::vector<int64_t> model_structure = {2 , 5 ,1};
+
+    KAN kan(model_structure);
+    kan->to(device);
+    auto optimizer = torch::optim::LBFGS(kan->parameters(), torch::optim::LBFGSOptions(1).max_iter(100));
+    int64_t epoch = 20;
+    auto input = torch::rand({1024, 2});
+    kan->train();
+    for (int i = 0; i < epoch; ++i) {
+        auto closure = [&]() -> torch::Tensor {
+            optimizer.zero_grad();
+            torch::Tensor output = kan->forward(input);
+            torch::Tensor reg_loss = kan->regularization_loss(1, 0);
+
+            auto x1 = input.index({torch::indexing::Slice(), 0});
+            auto x2 = input.index({torch::indexing::Slice(), 1});
+
+            const double pi = M_PI; 
+            torch::Tensor target;
+
+            if (functionIndex == 0) {
+                target = torch::exp(torch::sin(pi * x1) + x2 * x2);
+            } else if (functionIndex == 1) {
+                target = x1 * x1 + x2 * x2;
+            } else if (functionIndex == 2) {
+                target = torch::sin(x1) * torch::cos(x2);
+            } else if (functionIndex == 3) {
+                target = torch::tanh(x1 + x2);
+            } else {
+                std::cerr << "Invalid function index" << std::endl;
+                return torch::Tensor(); // Return an empty tensor to avoid errors
+            }
+            
+
+            torch::Tensor loss = torch::nn::functional::mse_loss(output.squeeze(-1), target);
+
+            torch::Tensor total_loss = loss + 1e-5 * reg_loss;
+
+            total_loss.backward();
+            return total_loss;
+        };
+        optimizer.step(closure);
+
+        std::string filename = "trainImages/epoch_" + std::to_string(i + 1) + ".png";
+        plotModel(structure, kan, filename);
+
+        if (!modelStructureTexture.loadFromFile(filename)) {
+            std::cerr << "Error loading image: " << filename << std::endl;
+            continue;
+        }
+        
+        modelStructureSprite.setTexture(modelStructureTexture);
+        float desiredSize = 550.0f;
+
+        float scaleFactorX = desiredSize / modelStructureTexture.getSize().x;
+        float scaleFactorY = desiredSize / modelStructureTexture.getSize().y;
+        float scaleFactor = std::min(scaleFactorX, scaleFactorY);
+
+        modelStructureSprite.setScale(scaleFactor, scaleFactor);
+        modelStructureSprite.setPosition(50.f, 200.f);
+        render();
+    }
+    kan->eval();
+    auto new_input = torch::rand({5, 2});
+    std::cout << "Input: " << new_input << std::endl;
+    std::cout << "Output: " << kan->forward(new_input) << std::endl;
+
+    int numFrames = epoch; 
+    double fps = 20.0; 
+    std::string outputVideoPath = "training_visualization.avi";
+    createAVIVideoFromImages(outputVideoPath, numFrames, fps);
+
+    torch::save(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KANFUNCTION.pt");
+}
+
+void App::predictFunction(float x, float y) {
+    std::vector<int64_t> model_structure = {2, 5, 1}; 
+
+    KAN kan(model_structure);
+    torch::load(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KANFUNCTION.pt");
+    kan->to(device); 
+    kan->eval();
+    
+    torch::Tensor input = torch::tensor({{x, y}}, torch::kFloat).to(device); 
+
+    torch::Tensor output = kan->forward(input);
+
+    torch::Tensor computed_result;
+    const float pi = static_cast<float>(M_PI);
+    torch::Tensor x_tensor = torch::tensor({x}, torch::kFloat).to(device);
+    torch::Tensor y_tensor = torch::tensor({y}, torch::kFloat).to(device);
+
+    switch (functionIndex) {
+        case 0:
+            computed_result = torch::exp(torch::sin(pi * x_tensor) + y_tensor * y_tensor);
+            break;
+        case 1:
+            computed_result = x_tensor * x_tensor + y_tensor * y_tensor;
+            break;
+        case 2:
+            computed_result = torch::sin(x_tensor) * torch::cos(y_tensor);
+            break;
+        case 3:
+            computed_result = torch::tanh(x_tensor + y_tensor);
+            break;
+        default:
+            std::cerr << "Invalid function index." << std::endl;
+            return;
+    }
+
+    // Update the SFML texts with the results
+    functionPredictionText.setString("Prediction: " + std::to_string(output.item<float>()));
+    functionRealResultText.setString("Real Result: " + std::to_string(computed_result.item<float>()));
+}
+
+
+void App::plotModel(const std::vector<int>& structure, KAN& kan, const std::string& filename) {
+    auto positions = get_positions(structure);
+    auto grids = getModelGrid(kan);
+    int layer = 0;
+    for (size_t layer_idx = 0; layer_idx < positions.size(); ++layer_idx) {
+        auto& [x_pos, y_pos] = positions[layer_idx];
+        if (layer_idx % 2 == 0) {
+            plt::plot(x_pos, y_pos, "ko");  
+        } else {
+            std::vector<float> example_vectors = {1, 5, 6 ,2 , 3 ,4 , 7, 8};
+            
+            for (size_t i = 0; i < x_pos.size(); ++i) {
+                draw_square(x_pos[i], y_pos[i], 0.15, grids[1-layer][i]);
+            }
+            layer++;
+        }
+    }
+    plt::xlim(-2.5, 2.5);
+    plt::ylim(-2.5, 2.5);
+    plt::axis("off");  
+    plt::axis("equal");
+    plt::save(filename);
+    plt::clf(); 
+}
+
+std::vector<std::vector<float>> App::batchToVectors(const torch::Tensor& batch) {
+    std::vector<std::vector<float>> batch_vectors;
+    for (int i = 0; i < batch.size(0); ++i) {
+        batch_vectors.push_back(tensorToVector(batch[i]));
+    }
+    return batch_vectors;
+}
+
+std::vector<float> App::tensorToVector(const torch::Tensor& tensor) {
+    auto cpu_tensor = tensor.to(torch::kCPU).to(torch::kFloat32).contiguous();
+    std::vector<float> vec(cpu_tensor.data_ptr<float>(), cpu_tensor.data_ptr<float>() + cpu_tensor.numel());
+    return vec;
+}
+
+
+void App::createAVIVideoFromImages(const std::string& outputVideoPath, int numFrames, double fps) {
+    std::vector<cv::Mat> frames;
+    
+    for (int i = 0; i < numFrames; ++i) {
+        std::string filename = "trainImages/epoch_" + std::to_string(i + 1) + ".png";
+        cv::Mat frame = cv::imread(filename);
+        if (frame.empty()) {
+            std::cerr << "Could not read image: " << filename << std::endl;
+            continue;
+        }
+        frames.push_back(frame);
+    }
+
+    if (frames.empty()) {
+        std::cerr << "No frames were loaded." << std::endl;
+        return;
+    }
+
+    cv::Size frameSize(frames[0].cols, frames[0].rows);
+
+    cv::VideoWriter videoWriter(outputVideoPath, cv::VideoWriter::fourcc('M','J','P','G'), fps, frameSize);
+
+    for (const auto& frame : frames) {
+        videoWriter.write(frame);
+    }
+
+    videoWriter.release();
+    std::cout << "Video saved as " << outputVideoPath << std::endl;
+}
+
+
+void App::createMP4VideoFromImages(const std::string& outputVideoPath, int numFrames, double fps) {
+    std::vector<cv::Mat> frames;
+    
+    for (int i = 0; i < numFrames; ++i) {
+        std::string filename = "/Users/quannguyennam/Documents/Projects/KANS/trainImages/epoch_" + std::to_string(i + 1) + ".png";
+        cv::Mat frame = cv::imread(filename);
+        if (frame.empty()) {
+            std::cerr << "Could not read image: " << filename << std::endl;
+            continue;
+        }
+        frames.push_back(frame);
+    }
+
+    if (frames.empty()) {
+        std::cerr << "No frames were loaded." << std::endl;
+        return;
+    }
+
+    cv::Size frameSize(frames[0].cols, frames[0].rows);
+
+    cv::VideoWriter videoWriter(outputVideoPath, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'), fps, frameSize);
+
+    if (!videoWriter.isOpened()) {
+        std::cerr << "Could not open the output video file for write." << std::endl;
+        return;
+    }
+
+    for (const auto& frame : frames) {
+        videoWriter.write(frame);
+    }
+
+    videoWriter.release();
+    std::cout << "Video saved as " << outputVideoPath << std::endl;
+}
+
+
+float App::convertTextToFloat(const sf::Text& text) {
+
+    std::string str = text.getString().toAnsiString();
+
+    try {
+        float value = std::stod(str);
+        return value;
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Invalid argument: " << e.what() << std::endl;
+        return 0.0;
+    } catch (const std::out_of_range& e) {
+        std::cerr << "Out of range: " << e.what() << std::endl;
+        return 0.0;
+    }
+}

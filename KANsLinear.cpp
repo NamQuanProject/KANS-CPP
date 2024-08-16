@@ -26,10 +26,10 @@ KANLinearImpl::KANLinearImpl(
 
     base_weight = register_parameter("base_weight", torch::empty({out_features, in_features}));
     spline_weight = register_parameter("spline_weight", torch::empty({out_features, in_features, grid_size + spline_order}));
+    
     if (enable_standalone_scale_spline) {
         spline_scaler = register_parameter("spline_scaler", torch::empty({out_features, in_features}));
-    }
-
+    }  
     reset_parameters();
 }
 
@@ -63,16 +63,18 @@ torch::Tensor KANLinearImpl::b_splines(torch::Tensor x) {
 
     auto grid_t = grid;
     x = x.unsqueeze(-1);
+
     auto bases = ((x >= grid_t.slice(1, 0, -1)) & (x < grid_t.slice(1, 1))).to(x.dtype());
 
     for (int k = 1; k <= spline_order; k++) {
         bases = (x - grid_t.slice(1, 0, -(k + 1))) / (grid_t.slice(1, k, -1) - grid_t.slice(1, 0, -(k + 1))) * bases.slice(2, 0, -1) +
                 (grid_t.slice(1, k + 1) - x) / (grid_t.slice(1, k + 1) - grid_t.slice(1, 1, -k)) * bases.slice(2, 1);
     }
-
+    
     assert(bases.size(0) == x.size(0) && bases.size(1) == in_features && bases.size(2) == grid_size + spline_order);
     return bases.contiguous();
 }
+
 
 torch::Tensor KANLinearImpl::curve2coeff(torch::Tensor x, torch::Tensor y) {
     /*
@@ -93,7 +95,7 @@ torch::Tensor KANLinearImpl::curve2coeff(torch::Tensor x, torch::Tensor y) {
 
     auto solution = torch::linalg::lstsq(A, B, c10::nullopt, "gels");
     torch::Tensor result = std::get<0>(solution).permute({2, 0, 1}); 
-     // (out_features, in_features, grid_size + spline_order)
+    // (out_features, in_features, grid_size + spline_order)
 
     assert(result.size(0) == out_features && result.size(1) == in_features && result.size(2) == grid_size + spline_order);
 
@@ -145,7 +147,7 @@ void KANLinearImpl::update_grid(torch::Tensor x, double margin) {
                         .add(x_sorted[0] - margin);
     
     grid = grid_eps * grid_uniform + (1 - grid_eps) * grid_adaptive;
-
+    
     auto lower_extension = grid.slice(0, 0, 1).clone() - uniform_step * torch::arange(spline_order, 0, -1, torch::TensorOptions().device(x.device())).unsqueeze(1);
     auto upper_extension = grid.slice(0, -1).clone() + uniform_step * torch::arange(1, spline_order + 1, torch::TensorOptions().device(x.device())).unsqueeze(1);
 

@@ -40,10 +40,10 @@ KANImpl::KANImpl(
 
 torch::Tensor KANImpl::forward(torch::Tensor x, bool update_grid) {
    for (auto& layer : layers) {
-       if (update_grid) {
+        if (update_grid) {
            layer->update_grid(x);
         }
-       x = layer->forward(x);
+        x = layer->forward(x);
    }
    return x;
 }
