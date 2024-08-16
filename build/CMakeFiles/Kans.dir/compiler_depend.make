@@ -357,6 +357,22 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/operations.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/buffer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/concepts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/enable_insertable.h \
@@ -724,6 +740,7 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cctype \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cfloat \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cinttypes \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/climits \
@@ -748,7 +765,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/errno.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/exception \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/execution \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/filesystem \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/forward_list \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/initializer_list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/inttypes.h \
@@ -802,6 +822,7 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/errno.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/gethostuuid.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/inttypes.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/libkern/_OSByteOrder.h \
@@ -944,6 +965,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wchar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_bf16.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_neon.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/inttypes.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
@@ -5549,10 +5573,371 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
   /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/custom_class.h \
   /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/custom_class_detail.h \
   /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/library.h \
-  /Users/quannguyennam/Documents/Projects/KANS/matplotlib-cpp/matplotlibcpp.h
+  /Users/quannguyennam/Documents/Projects/KANS/KAN.cpp \
+  /Users/quannguyennam/Documents/Projects/KANS/KAN.h \
+  /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.cpp \
+  /Users/quannguyennam/Documents/Projects/KANS/KANsLinear.h \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Config.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/BlendMode.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/CircleShape.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Color.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/ConvexShape.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Drawable.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Export.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Font.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glyph.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Image.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/PrimitiveType.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Rect.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Rect.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RectangleShape.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderStates.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderTarget.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderTexture.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderWindow.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Shader.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Shape.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Texture.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Transform.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Transformable.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Vertex.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexArray.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/View.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Clock.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Err.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Export.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/FileInputStream.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/InputStream.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Lock.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/MemoryInputStream.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Mutex.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/NonCopyable.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Sleep.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/String.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/String.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Thread.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Thread.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocal.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Time.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Utf.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Utf.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector2.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector2.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector3.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector3.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Clipboard.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Context.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/ContextSettings.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Cursor.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Event.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Export.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/GlResource.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Joystick.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Keyboard.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Mouse.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Sensor.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Touch.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/VideoMode.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Vulkan.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Window.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowBase.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowHandle.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/UI.cpp \
+  /Users/quannguyennam/Documents/Projects/KANS/UI.h \
+  /Users/quannguyennam/Documents/Projects/KANS/dataset.h \
+  /Users/quannguyennam/Documents/Projects/KANS/matplotlib-cpp/matplotlibcpp.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/build/opencv2/opencv_modules.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/include/opencv2/opencv.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/calib3d/include/opencv2/calib3d.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/affine.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/async.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/base.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/bufferpool.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/check.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cuda.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cuda.inl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cuda_types.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cv_cpu_dispatch.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cvdef.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cvstd.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cvstd_wrapper.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/fast_math.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/hal/interface.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/mat.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/mat.inl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/matx.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/matx.inl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/neon_utils.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/operations.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/optim.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/ovx.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/persistence.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/saturate.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/traits.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/types.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/utility.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/utils/logger.defines.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/utils/logger.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/utils/logtag.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/version.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/vsx_utils.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/version.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/dict.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/dnn.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/dnn.inl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/layer.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/dnn.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/utils/inference_engine.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/features2d/include/opencv2/features2d.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/all_indices.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/allocator.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/any.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/autotuned_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/composite_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/config.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/defines.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/dist.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/dynamic_bitset.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/flann_base.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/general.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/ground_truth.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/heap.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/index_testing.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/kdtree_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/kdtree_single_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/kmeans_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/linear_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/logger.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/lsh_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/lsh_table.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/matrix.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/miniflann.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/nn_index.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/params.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/random.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/result_set.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/sampling.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/saving.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/timer.h \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/highgui/include/opencv2/highgui.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/imgproc/include/opencv2/imgproc/segmentation.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/imgproc/include/opencv2/imgproc.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/ml/include/opencv2/ml.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/ml/include/opencv2/ml/ml.inl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/aruco_board.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/aruco_detector.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/aruco_dictionary.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/barcode.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/charuco_detector.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/face.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/graphical_code_detector.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/photo/include/opencv2/photo.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/video/include/opencv2/video.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/video/include/opencv2/video/background_segm.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/video/include/opencv2/video/tracking.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/opencv/modules/videoio/include/opencv2/videoio.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/testKAN.cpp \
+  /Users/quannguyennam/Documents/Projects/KANS/testKAN.h \
+  /Users/quannguyennam/Documents/Projects/KANS/train.cpp \
+  /Users/quannguyennam/Documents/Projects/KANS/train.h
 
+
+/Users/quannguyennam/Documents/Projects/KANS/testKAN.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/video/include/opencv2/video/background_segm.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/face.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/barcode.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/aruco_detector.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/aruco_board.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/ml/include/opencv2/ml.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/imgproc/include/opencv2/imgproc.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/imgproc/include/opencv2/imgproc/segmentation.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/highgui/include/opencv2/highgui.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/timer.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/saving.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/params.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/matrix.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/kdtree_single_index.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/kdtree_index.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/general.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/flann_base.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/dynamic_bitset.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/config.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/all_indices.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/features2d/include/opencv2/features2d.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/dnn.inl.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/dnn.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/version.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/vsx_utils.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/utils/logtag.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/persistence.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/neon_utils.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/matx.inl.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/mat.inl.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/mat.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cvdef.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cuda_types.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/bufferpool.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/async.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/include/opencv2/opencv.hpp:
 
 /Users/quannguyennam/Documents/Projects/KANS/matplotlib-cpp/matplotlibcpp.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/dataset.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowBase.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Vulkan.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/VideoMode.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Mouse.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Keyboard.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Export.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Context.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector3.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector2.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Utf.inl:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Utf.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Time.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/utils/inference_engine.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/String.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Sleep.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/MemoryInputStream.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Err.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/View.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexArray.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Transformable.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Texture.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Shape.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderWindow.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderTarget.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Rect.inl:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Rect.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/PrimitiveType.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Image.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glyph.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/composite_index.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.inl:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Font.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Export.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/ConvexShape.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/saturate.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/KANsLinear.cpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/KAN.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/utils/python_stub.h:
 
@@ -5624,8 +6009,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/vision.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/transformer.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/rnn.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/pixelshuffle.h:
@@ -5635,6 +6018,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/loss.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/fold.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/embedding.h:
 
@@ -5720,6 +6105,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/reverse_iterator.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RectangleShape.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/quint4x2.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/quint2x4.h:
@@ -5773,8 +6160,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/Float8_e4m3fn-inl.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/Flags.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/ExclusivelyOwnedTensorTraits.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/ExclusivelyOwned.h:
 
@@ -5878,6 +6263,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/vstack_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cv_cpu_dispatch.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/vstack.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/view_ops.h:
@@ -5930,6 +6317,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_trilinear3d_backward_meta.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/String.inl:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_trilinear3d.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest3d_backward_ops.h:
@@ -5952,6 +6341,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_linear1d_backward_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/index_testing.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_linear1d_backward_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_linear1d_backward.h:
@@ -5972,9 +6363,13 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unsafe_split_with_sizes_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unsafe_split_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unsafe_chunk.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector2.inl:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unique_dim_ops.h:
 
@@ -6004,6 +6399,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unfold_backward.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/nn_index.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/ArrayRef.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unflatten_ops.h:
@@ -6019,6 +6416,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unbind.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/type_as_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Vertex.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trunc_ops.h:
 
@@ -6062,6 +6461,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/transpose_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/BlendMode.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/transpose_copy.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trace_backward_ops.h:
@@ -6069,6 +6470,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trace_backward_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trace_backward.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Touch.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_bicubic2d_backward_native.h:
 
@@ -6093,6 +6496,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_padded_tensor.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Cursor.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_mkldnn_backward_ops.h:
 
@@ -6208,6 +6613,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/stft.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/linear_index.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/std_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/std_native.h:
@@ -6258,6 +6665,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_zeta.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/optim.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_xlogy_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/modules/instancenorm.h:
@@ -6290,6 +6699,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_scaled_modified_bessel_k1_meta.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/hal/interface.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_scaled_modified_bessel_k0_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_scaled_modified_bessel_k0_meta.h:
@@ -6312,7 +6723,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_ndtr.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_multigammaln_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/heap.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_bilinear2d_native.h:
 
@@ -6472,6 +6887,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sparse_dim.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/any.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sparse_csr_tensor_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sparse_csr_tensor.h:
@@ -6496,6 +6913,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sparse_bsr_tensor_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sparse_bsc_tensor_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_softmax_ops.h:
@@ -6517,6 +6936,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/softplus_backward_meta.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/softmax_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/check.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/soft_margin_loss_backward_ops.h:
 
@@ -6555,8 +6976,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slow_conv_dilated2d.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slow_conv3d_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slow_conv3d_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slow_conv3d_forward_native.h:
 
@@ -6786,8 +7205,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reshape_as.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/requires_grad_ops.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/requires_grad_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/silu.h:
@@ -6866,7 +7283,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reflection_pad2d.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Thread.inl:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reflection_pad1d_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/replication_pad1d_native.h:
 
@@ -6893,6 +7314,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/real_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/real_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/real.h:
 
@@ -7088,11 +7511,15 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/one_hot_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/random.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/one_hot.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/numpy_T_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/numpy_T.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/NonCopyable.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/nuclear_norm_native.h:
 
@@ -7199,6 +7626,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_layer_norm_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_layer_norm_backward_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/InputStream.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_layer_norm_backward.h:
 
@@ -7528,6 +7957,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/max.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/affine.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/matrix_power_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/relu_ops.h:
@@ -7565,6 +7996,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/masked_select_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/masked_select_backward_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/utils/logger.defines.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/masked_select_backward.h:
 
@@ -7618,6 +8051,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logit.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderTexture.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logical_xor_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logical_xor_native.h:
@@ -7625,6 +8060,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logical_or_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logical_not_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unsqueeze.h:
 
@@ -7643,6 +8080,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logdet.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logaddexp_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logaddexp_meta.h:
 
@@ -7786,6 +8225,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_lu_solve_meta.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/logger.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_lu_solve.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_lu_native.h:
@@ -7924,6 +8365,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/leaky_relu_backward_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/CircleShape.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/miopen_rnn.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/leaky_relu_backward_native.h:
@@ -7970,6 +8413,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/kthvalue.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/dist.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/kron_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logit_ops.h:
@@ -8005,6 +8450,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mkldnn_adaptive_avg_pool2d_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/isposinf.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cvstd_wrapper.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/isneginf_native.h:
 
@@ -8304,6 +8751,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardtanh_backward_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardswish_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardswish_backward_ops.h:
@@ -8344,6 +8793,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardshrink.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logical_xor.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hann_window_ops.h:
@@ -8364,33 +8815,43 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gt.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_none_of.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gru_cell_ops.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gru_cell_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gru_cell.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/group_norm_ops.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/group_norm_native.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_dropout_backward.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/group_norm.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/is_set_to.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/relu.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/elu_ops.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mv_ops.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_ops.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_backward_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_backward_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_backward.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_spherical_bessel_j0_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_native.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_pad_packed_sequence_native.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_backward_ops.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_backward.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_backward_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/greater_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/greater_equal_native.h:
 
@@ -8433,6 +8894,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_if.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gelu_backward_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/fstream:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gelu_backward_meta.h:
 
@@ -8551,6 +9014,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/channel_shuffle_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fliplr_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/videoio/include/opencv2/videoio.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/flip_native.h:
 
@@ -8738,6 +9203,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fbgemm_linear_int8_weight_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/train.cpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_multi_dot.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_values_copy_ops.h:
@@ -8858,15 +9325,15 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/empty_like_ops.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/greater_native.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/empty_like_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/is_signed.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_neg_native.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/convolution_overrideable.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_neg_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fbgemm_pack_gemm_matrix_fp16.h:
 
@@ -8912,6 +9379,16 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/embedding_backward_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Export.hpp:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_dropout_backward.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/is_set_to.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/elu_ops.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/detail/XPUHooksInterface.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/elu_native.h:
@@ -8954,12 +9431,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/dot_native.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/acos_meta.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_thnn_fused_lstm_cell_backward_impl.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_native.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/SmallVector.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/dot.h:
@@ -8967,6 +9438,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_asin_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/frac_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/GlResource.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/div_ops.h:
 
@@ -8977,6 +9450,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/dist_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/dist.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowHandle.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/embedding_ops.h:
 
@@ -9044,9 +9519,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/data_ops.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/op_registration/op_registration.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/binary_cross_entropy_backward.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/op_registration/op_registration.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cumulative_trapezoid_native.h:
 
@@ -9208,6 +9683,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/copysign_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Clipboard.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/copysign_meta.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/copy_sparse_to_sparse_ops.h:
@@ -9225,10 +9702,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_lexicographically_comparable.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/copy_sparse_to_sparse.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/data/samplers/serialize.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/copy_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/contiguous_ops.h:
 
@@ -9251,8 +9724,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/convolution_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/convolution_backward_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_backward_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hsplit_native.h:
 
@@ -9299,6 +9770,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/round_meta.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/conv_depthwise3d_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/kmeans_index.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/conv_depthwise3d.h:
 
@@ -9459,10 +9932,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_partial_sort_copy.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cholesky_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cholesky_native.h:
 
@@ -9643,6 +10112,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/binary_cross_entropy_with_logits_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bilinear_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/dict.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/batch_norm_update_stats_ops.h:
 
@@ -9908,6 +10379,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/arccos_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/arange_ops.h:
@@ -9954,6 +10427,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/amax_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/version.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/argmin.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/bit_floor.h:
@@ -9983,8 +10458,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/pin_memory_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/allclose_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/all_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_group_norm_native.h:
 
@@ -10017,8 +10490,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/quantized_rnn_relu_cell_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/align_as_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/align_as_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_abs_native.h:
 
@@ -10077,6 +10548,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/chunk.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/addbmm.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_bf16.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fft_rfftfreq.h:
 
@@ -10216,6 +10689,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_validate_sparse_compressed_tensor_args_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_validate_sparse_compressed_tensor_args.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_validate_sparse_bsr_tensor_args_native.h:
@@ -10225,6 +10700,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/bind.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/embedding_backward.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Thread.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/batch_norm_elemt_native.h:
 
@@ -10256,6 +10733,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact3d_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cvstd.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact3d_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact3d_meta.h:
@@ -10282,9 +10761,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact2d_backward_meta.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/format_error.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/replace_copy.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/format_error.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/unistd.h:
 
@@ -10293,6 +10772,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unbind_copy.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact2d.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/empty_native.h:
 
@@ -10311,6 +10792,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/max_pool3d_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact1d_backward_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/utils/logger.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact1d_backward_meta.h:
 
@@ -10395,6 +10878,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fbgemm_linear_fp16_weight_fp32_activation_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_triton_scaled_dot_attention_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cuda.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/randn_native.h:
 
@@ -10504,6 +10989,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_thnn_fused_lstm_cell_backward_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/calib3d/include/opencv2/calib3d.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mvlgamma_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/erf.h:
@@ -10515,6 +11002,12 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_linalg_solve_ex_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/atan2_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/acos_meta.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_thnn_fused_lstm_cell_backward_impl.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_thnn_fused_lstm_cell_backward.h:
 
@@ -10533,6 +11026,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages/numpy/core/include/numpy/npy_endian.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_thnn_fused_gru_cell_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/sampling.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h:
 
@@ -10598,6 +11093,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/atan_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/dnn/include/opencv2/dnn/layer.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_optional_intlist.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/exception_guard.h:
@@ -10611,6 +11108,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_embedding_bag_sparse_backward.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_optional_floatlist.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/ground_truth.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_optional_filled_intlist_ops.h:
 
@@ -10642,6 +11141,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/alpha_dropout_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/fast_math.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_cast_Int_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_autograd_multiple_dispatch_native.h:
@@ -10649,6 +11150,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/adaptive_max_pool2d_backward_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_autograd_multiple_dispatch.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/values_copy.h:
 
@@ -10801,12 +11304,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_multigammaln.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sparse_coo_tensor_unsafe_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/polygamma_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_matrix_exp_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sparse_coo_tensor_unsafe.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sparse_compressed_tensor_unsafe_ops.h:
 
@@ -10984,6 +11481,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_scaled_dot_product_efficient_attention_backward.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/video/include/opencv2/video.hpp:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Shader.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_scaled_dot_product_efficient_attention.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_symbol_aliasing.h:
@@ -11082,6 +11583,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_propagate_xla_data_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocal.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_prelu_kernel_backward_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/stable_sort.h:
@@ -11097,6 +11600,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/string_utils.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_pdist_backward.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_backward.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_pad_packed_sequence_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/values.h:
 
@@ -11127,6 +11634,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/pad_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_pad_circular_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/photo/include/opencv2/photo.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_unique2.h:
 
@@ -11228,6 +11737,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_nested_sum_backward.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/result_set.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_nested_select_backward.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_nested_from_padded_ops.h:
@@ -11304,15 +11815,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fft_irfft_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Event.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_mps_convolution_transpose_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_ldl_factor_ex_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/algorithm:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_new_zeros_with_same_feature_meta_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_mps_convolution_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_mps_convolution_native.h:
 
@@ -11333,6 +11838,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_mkldnn_transpose.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_masked_softmax_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Clock.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/frobenius_norm.h:
 
@@ -11355,6 +11862,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_masked_scale_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/conv_tbc.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/avg_pool2d_backward_native.h:
 
@@ -11479,6 +11988,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fft_irfft.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_linalg_eigh_meta.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Window.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/addcmul_meta.h:
 
@@ -11626,11 +12137,61 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_dropout_ops.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/eye_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sparse_bsc_tensor.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fft_rfftfreq_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_dropout.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_ldl_solve_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adamw_ops.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_sub.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sparse_bsr_tensor_unsafe_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adamw_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardswish.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/acos_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/autograd/edge.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_sparse_csr_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bincount.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adamw.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/kaiser_window_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adam_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_reshape_from_tensor.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tree:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adam_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fw_primal_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_resize_output_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic_sync.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest1d_backward_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_is_any_true_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range_for_size_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range_for_size_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sparse_softmax_backward_data.h:
 
@@ -11639,6 +12200,12 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mkldnn_max_pool2d_backward_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range_for_size.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/qint8.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slow_conv_transpose2d_meta.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/histogram.h:
 
@@ -11651,6 +12218,14 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unsafe_chunk_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_trunc_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_trunc_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/tril_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/choose_qparams_optimized.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_trunc.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sub_native.h:
 
@@ -11712,6 +12287,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/mach/machine/_structs.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logsumexp.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_minimum.h:
@@ -11726,11 +12303,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_maximum.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/ostream.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/greater_ops.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_log_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/train.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_spherical_bessel_j0_ops.h:
 
@@ -11745,8 +12320,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_xlog1py.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_log2_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range_for_size_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_scaled_dot_product_efficient_attention_native.h:
 
@@ -11771,6 +12344,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_lstm_mps.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/lower_bound.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Drawable.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_log10.h:
 
@@ -11854,11 +12429,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/divide_ops.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path_iterator.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_atan_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_ldl_solve_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adamw_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/kthvalue_ops.h:
 
@@ -11920,8 +12493,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_acos.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/eye_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/ostreambuf_iterator.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/diagonal_scatter_native.h:
@@ -11943,26 +12514,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foobar_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_flash_attention_forward_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/acosh_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/argwhere_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_modified_bessel_k0_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_copy_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_zero_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_ndtri_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/round.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/adaptive_max_pool3d_backward_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fill_mem_eff_dropout_mask_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fill_mem_eff_dropout_mask.h:
 
@@ -12036,14 +12587,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_euclidean_dist.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/autograd/edge.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_sparse_csr_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adamw.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bincount.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_addcmul.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_histogramdd_bin_edges_ops.h:
@@ -12108,11 +12651,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/flip_ops.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/merge.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/coalesce_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/not_fn.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/merge.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_chebyshev_polynomial_v_meta.h:
 
@@ -12196,6 +12739,12 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_cos_ops.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/arm_neon.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/u8path.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_dim_arange_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_pow_native.h:
@@ -12223,6 +12772,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tuple/tuple_types.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_dim_arange.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/KANsLinear.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/activation.h:
 
@@ -12285,6 +12836,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/cpython/pyerrors.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_modified_bessel_i1_native.h:
 
@@ -12374,23 +12927,13 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_copy_from.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/kaiser_window_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adam_ops.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_convolution_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/one_hot_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_convolution_mode_native.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fw_primal_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_resize_output_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic_sync.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range_ops.h:
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/charuco_detector.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/narrow_copy.h:
 
@@ -12495,12 +13038,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/set_data_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_lerp_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_stable_partition.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/outer.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_assert_async_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/setobject.h:
 
@@ -12620,6 +13157,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_serialization_subcmul_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Mutex.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/any_of.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/utility:
@@ -12644,6 +13183,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/amin.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/testKAN.cpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_add_relu_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/modules/embedding.h:
@@ -12663,6 +13204,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_cast_Float_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_add_relu.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/FileInputStream.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_add_batch_dim.h:
 
@@ -12846,10 +13389,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest1d_backward_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_is_any_true_ops.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_embedding_bag_dense_backward.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h:
@@ -12863,10 +13402,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/boolean_testable.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/VariableHooksInterface.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/condition_variable:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/UnsafeFromTH.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_reciprocal.h:
 
@@ -12913,6 +13448,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/Generator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/transform.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Config.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/negative_ops.h:
 
@@ -12962,17 +13499,13 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/ATenGeneral.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ScalarOps.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/projected.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_assert_async_native.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/bitset:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_tan_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_erfc_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/UI.cpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/WrapDimUtilsMulti.h:
 
@@ -12991,12 +13524,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mkldnn_max_pool2d_backward.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/TensorOperators.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_reshape_from_tensor.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tree:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_adam_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_airy_ai_native.h:
 
@@ -13022,15 +13549,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_batch_norm_impl_index_native.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_backward_native.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardtanh.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/crow_indices_copy_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/Parallel.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/PadNd.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/unique_ptr.h:
 
@@ -13081,6 +13604,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/DeviceGuard.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ATen.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/RenderStates.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_serialization_subcmul_ops.h:
 
@@ -13206,6 +13731,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/div_meta.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/aruco_dictionary.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/replace_copy_if.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
@@ -13225,8 +13752,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/pyconfig.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/pycapsule.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/group_norm_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sparse_semi_structured_linear_native.h:
 
@@ -13292,8 +13817,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/cpython/traceback.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_backward_native.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/cpython/sysmodule.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/empty.h:
@@ -13309,6 +13832,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/bind_front.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_tanh_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/defines.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_set_difference.h:
 
@@ -13392,7 +13917,17 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_coalesced.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_solve_ex_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_linalg_check_errors_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/float.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_make_per_tensor_quantized_tensor_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_assert_async_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/projected.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h:
 
@@ -13454,6 +13989,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/atleast_2d_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Sensor.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/wait.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_unsafe_index.h:
@@ -13507,12 +14044,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/ceil_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_u_int.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/relu.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mv_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unflatten_native.h:
 
@@ -13578,8 +14109,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/op_registration/infer_schema.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_backward.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/pthread/sched.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/picklebufobject.h:
@@ -13587,6 +14116,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardtanh_backward.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/argmax_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/ovx.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/variant.h:
 
@@ -13612,8 +14145,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int8_t.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_trunc_native.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_gammaln_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int32_t.h:
@@ -13621,6 +14152,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int16_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ino_t.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/ContextSettings.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ino64_t.h:
 
@@ -13708,8 +14241,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/group_norm.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/stride.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_select.h:
@@ -13732,7 +14263,7 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/clone.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gru_cell_native.h:
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Color.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:
 
@@ -13824,12 +14355,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/machine/types.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/tril_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/choose_qparams_optimized.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_trunc.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/isinf_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ratio:
@@ -13878,6 +14403,12 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/wchar.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_find.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_native_batch_norm_legit_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/version:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/vector:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bernoulli_native.h:
@@ -13892,11 +14423,75 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/unordered_set:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reshape_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sample_dirichlet_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_round_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/vsplit.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/conv_tbc_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/unordered_map:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/typeinfo:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/shuffle.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_sinc_native.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_make_dep_token.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cudnn_batch_norm_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_to_cpu_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_lerp.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/row_stack.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/format_to_n_result.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_lower_bound.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_constructible.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/svd.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/is_always_lock_free.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_backward_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/autograd/forward_grad.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_trilinear3d_backward_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/type_traits:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/nan_to_num_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cwchar:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/tuple:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest1d.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/triu.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/all.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_sign_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/concat_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/min_meta.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/string_view:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/nll_loss2d_backward.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/diagflat.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact2d_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/profiler/api.h:
 
@@ -13914,13 +14509,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/string:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/swap.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_to_sparse.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System.hpp:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/ccol_indices.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stdlib.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stdio.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_validate_sparse_bsr_tensor_args.h:
 
@@ -13949,6 +14542,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/jit/frontend/function_schema_parser.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ostream:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Lock.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_embedding_bag_per_sample_weights_backward_ops.h:
 
@@ -14008,6 +14603,20 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/initializer_list:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/condition_variable:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/UnsafeFromTH.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/lsh_table.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mkldnn_linear_backward_input_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/nested_exception.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/float.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/pdist_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_make_heap.h:
@@ -14022,12 +14631,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_efficientzerotensor_native.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/tuple:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/nan_to_num_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cwchar:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/set_data_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_group_norm_backward.h:
@@ -14037,14 +14640,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mish_backward.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ctype.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slice_scatter_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_vector_norm_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstring:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/clamp_min_native.h:
 
@@ -14075,6 +14670,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/binary_search.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.inl:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
 
@@ -14110,6 +14707,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cwctype:
 
+/Users/quannguyennam/Documents/Projects/KANS/UI.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_equal.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/cpython/objimpl.h:
@@ -14119,48 +14718,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/jit/runtime/argument_spec.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/unreachable.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_sinc_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cudnn_batch_norm_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_to_cpu_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_lerp.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/row_stack.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/format_to_n_result.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_lower_bound.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_constructible.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/svd.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/is_always_lock_free.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_backward_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/autograd/forward_grad.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_trilinear3d_backward_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/type_traits:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest1d.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/triu.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/all.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_sign_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/concat_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/min_meta.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/string_view:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_cudnn_ctc_loss_native.h:
 
@@ -14175,6 +14732,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/poisson_nll_loss_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cumprod_backward.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/requires_grad_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_status.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/sstream:
 
@@ -14338,8 +14899,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/make_signed.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/lazy.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/movedim_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/blsr.h:
@@ -14380,6 +14939,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_prelu_kernel.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/ccol_indices.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest2d_backward_ops.h:
@@ -14390,6 +14953,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/meshgrid_ops.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_scaled_dot_product_flash_attention_backward_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_member_object_pointer.h:
@@ -14397,12 +14962,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/embedding_sparse_backward_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_copy_constructible.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/outer_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/locale.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_copy_assignable.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fake_quantize_per_channel_affine_cachemask.h:
 
@@ -14486,6 +15045,12 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fmin_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/video/include/opencv2/video/tracking.hpp:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/meshgrid_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/type_list.h:
@@ -14525,6 +15090,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/uniform_random_bit_generator_adaptor.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/cuda.inl.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cudnn_affine_grid_generator_backward.h:
 
@@ -14616,6 +15183,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_partition_copy.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_reverse.h:
@@ -14633,6 +15202,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_assignable.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_check_tensor_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/argwhere_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/acosh_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bitwise_not.h:
 
@@ -14657,6 +15230,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backend.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/invoke.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stdlib.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/swap.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/convolution_backward_overrideable_native.h:
 
@@ -14726,9 +15303,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/adaptive_avg_pool1d_ops.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/deque:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator_traits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/deque:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream:
 
@@ -14740,7 +15317,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_asin_native.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ScalarOps.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cudnn_convolution_add_relu_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/objdetect/include/opencv2/objdetect/graphical_code_detector.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
 
@@ -14916,8 +15497,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/minmax.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_add_relu_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int64_t.h:
@@ -14926,11 +15505,15 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/add_cv.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_find.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cauchy_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__node_handle:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_ldl_factor_ex_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_new_zeros_with_same_feature_meta_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/algorithm:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/view_as_complex_copy_ops.h:
 
@@ -14949,6 +15532,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/convolution_backward_overrideable_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bitwise_left_shift.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/operations.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardshrink_backward_ops.h:
 
@@ -15056,11 +15641,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/size.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/compose.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/trapz_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/memory_order.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/compose.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_sparse_bsr_ops.h:
 
@@ -15090,19 +15675,25 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_to_sparse_bsc.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/space_info.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_suseconds_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/alignment_of.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_ndtri_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/round.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/adaptive_max_pool3d_backward_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/next.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_atan_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/mergeable.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/any_meta.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_u_int32_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/assert.h:
 
@@ -15123,6 +15714,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/insert_iterator.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/adaptive_avg_pool3d_backward_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/ExclusivelyOwnedTensorTraits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perms.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/isposinf_meta.h:
 
@@ -15170,6 +15765,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_bilinear2d_aa_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_log_softmax_meta.h:
@@ -15210,7 +15807,15 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/subrange.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_zero_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_modified_bessel_k0_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_copy_ops.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/QuantizerBase.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Transform.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/string_view.h:
 
@@ -15236,6 +15841,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/streambuf.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/greater_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/ostream.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_euclidean_dist_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
@@ -15245,6 +15854,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/acos_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/MT19937RNGEngine.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/KAN.cpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_version.h:
 
@@ -15282,47 +15893,31 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/can_cast_native.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_standard_gamma_ops.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/arccos.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/syslimits.h:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdint.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bilinear_native.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/scatter_meta.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/has_unique_object_representation.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/avg_pool2d_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/macros/Macros.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_make_dual.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/repeat_interleave_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__charconv/tables.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/deg2rad.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/fft.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/perfect_forward.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/repeat_interleave_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__charconv/tables.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/argsort_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/function.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/is_distributed_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__system_error/errc.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ctime:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/functional/normalization.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cumsum_meta.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/Availability.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/setjmp.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_autograd_multiple_dispatch_view_copy_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/default_searcher.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_copy_n.h:
 
@@ -15341,6 +15936,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/_locale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_amp_update_scale_ops.h:
 
@@ -15370,21 +15967,39 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/qint8.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slow_conv_transpose2d_meta.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/_types/_uintmax_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_autograd_multiple_dispatch_view_copy_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/setjmp.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/format_string.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fake_quantize_learnable_per_tensor_affine_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iomanip:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/data/samplers/serialize.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/copy_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/any_meta.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_u_int32_t.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/align_as_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/PadNd.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/batch_norm.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/options/transformer.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reflection_pad1d_backward.h:
 
@@ -15396,15 +16011,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_conj_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_cast_Long_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/version:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_native_batch_norm_legit_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/mkldnn_linear_backward_input_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/nested_exception.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reflection_pad2d_backward_ops.h:
 
@@ -15433,8 +16042,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_bicubic2d.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_move_backward.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_3d_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/fstream.h:
 
@@ -15494,7 +16101,21 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/synth_three_way.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bilinear_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/can_cast_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/arccos.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/syslimits.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/get.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/i0_meta.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/quantize_per_tensor_dynamic_ops.h:
 
@@ -15509,6 +16130,16 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/adjoint_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_out_out_result.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/outer_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/locale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_copy_assignable.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/Availability.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/operations.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_bessel_y0_native.h:
 
@@ -15566,12 +16197,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_validate_sparse_bsr_tensor_args_ops.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sparse_bsc_tensor.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fft_rfftfreq_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fused_dropout.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/arm/arch.h:
@@ -15626,6 +16251,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perm_options.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/safe_numerics.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sin.h:
@@ -15637,6 +16264,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/arctanh.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/alias_info.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_mps_convolution_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_type.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/narrow.h:
 
@@ -15677,6 +16308,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/dispatch/OperatorEntry.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/endian.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/Joystick.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/Context.h:
 
@@ -15756,24 +16389,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/detail/HIPHooksInterface.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/vander_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/embedding_renorm.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/MethodOperators.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/Load.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__system_error/error_category.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/arccosh_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_coalesce_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_softmax_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/thread:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/fence.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/format_arg.h:
@@ -15785,12 +16400,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest3d_backward_meta.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_native_batch_norm_legit.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/vsplit.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/conv_tbc_native.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_pin_memory.h:
 
@@ -15804,6 +16413,24 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_is_all_true_ops.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/vander_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/embedding_renorm.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/MethodOperators.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_coalesce_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/special_softmax_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/thread:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/Load.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__system_error/error_category.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/arccosh_native.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/util/string_view.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sym_constrain_range.h:
@@ -15811,6 +16438,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_thnn_fused_lstm_cell_backward_impl_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tuple/tuple_element.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/allocator.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/rrelu_with_noise_native.h:
 
@@ -15838,6 +16467,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_copy_assignable.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_make_dep_token.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/shuffle.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/lift_fresh_copy_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_choose_qparams_per_tensor_ops.h:
@@ -15862,8 +16495,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/sortable.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_sym_constrain_range_for_size_ops.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/fill.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unsqueeze_copy_ops.h:
@@ -15885,8 +16516,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/sinh.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/_types/_wctrans_t.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/grid_sampler_2d_backward_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
 
@@ -15914,11 +16543,21 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ct_rune_t.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/outer.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_functional_assert_async_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_stable_partition.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/arctan_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/ml/include/opencv2/ml/ml.inl.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_bicubic2d_aa.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/deg2rad_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/base.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/scatter_reduce_native.h:
 
@@ -15960,6 +16599,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_histogramdd_from_bin_cts_native.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/types.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/igamma_meta.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_rotate.h:
@@ -15996,6 +16637,22 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_replace_copy.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_flash_attention_forward_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/scatter_add_meta.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_pack_padded_sequence.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__undef_macros:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/lsh_index.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages/numpy/core/include/numpy/npy_interrupt.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_solve_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_remove_copy_if.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/unsafe_split.h:
@@ -16024,11 +16681,9 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/nll_loss2d_backward.h:
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/gru_cell_ops.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/diagflat.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_upsample_nearest_exact2d_native.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_none_of.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/as_strided_scatter_native.h:
 
@@ -16044,9 +16699,7 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_thnn_differentiable_gru_cell_backward_ops.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/hardswish.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/acos_native.h:
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/traits.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/bincount_native.h:
 
@@ -16126,10 +16779,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages/numpy/core/include/numpy/__multiarray_api.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_solve_ex_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_linalg_check_errors_native.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/upsample_nearest1d_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/min.h:
@@ -16166,6 +16815,18 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy_n.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/is_distributed_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__system_error/errc.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/default_searcher.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ctime:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/nn/functional/normalization.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/cumsum_meta.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_upper_bound.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fbgemm_linear_int8_weight_native.h:
@@ -16182,17 +16843,17 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_solve_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/clamp.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_first_of.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/ATenOpList.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/triu_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_assert_tensor_metadata_ops.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Vector3.inl:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_adjacent_find.h:
 
@@ -16201,16 +16862,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/avg_pool3d.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/mutex:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_flash_attention_forward_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/scatter_add_meta.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_pack_padded_sequence.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__undef_macros:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/lib/python3.9/site-packages/numpy/core/include/numpy/npy_interrupt.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/memory:
 
@@ -16248,6 +16899,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_erf_native.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/lazy.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logdet_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/compare:
@@ -16257,10 +16912,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/result_of.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/blob.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/batch_norm.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator_destructor.h:
 
@@ -16334,13 +16985,11 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/conv_transpose3d_native.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_to_sparse.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stdio.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_mkldnn_reshape_native.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/build/opencv2/opencv_modules.hpp:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/type_as_ops.h:
 
@@ -16374,23 +17023,13 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/_wctype.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/function.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/argsort_native.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_nnpack_available_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/max.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdint.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/scatter_meta.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/avg_pool2d_ops.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/c10/macros/Macros.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_make_dual.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
 
@@ -16414,14 +17053,6 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/reshape_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sample_dirichlet_native.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_round_ops.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/unordered_map:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_test_check_tensor_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/native_norm_native.h:
@@ -16434,15 +17065,15 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic_init.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/miniflann.hpp:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_scaled_dot_product_flash_attention.h:
-
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/i0_meta.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/rsub_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/warnings.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/matx.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_nothrow_move_assignable.h:
 
@@ -16468,6 +17099,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_foreach_addcmul_ops.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/has_unique_object_representation.h:
+
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_grid_sampler_2d_cpu_fallback_backward_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/signbit_native.h:
@@ -16477,6 +17110,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/replication_pad3d_backward.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/weak_order.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/float.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cfloat:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/ge_meta.h:
 
@@ -16502,7 +17139,7 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/codecvt:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/core/ATenOpList.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_time_type.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_nested_view_from_buffer_copy_native.h:
 
@@ -16521,6 +17158,10 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/multilabel_margin_loss_backward.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_find_first_of.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/all_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/filesystem:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/integer_sequence.h:
 
@@ -16547,6 +17188,14 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_lu_factor_ex_ops.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/fft_ihfft2_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slice_scatter_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_vector_norm_ops.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstring:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
 
@@ -16590,6 +17239,18 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/arm/limits.h:
 
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_fill_mem_eff_dropout_mask_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/polygamma_native.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/linalg_matrix_exp_ops.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_sparse_coo_tensor_unsafe.h:
+
+/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/slow_conv3d_native.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_sort_heap.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/to_sparse_csc_native.h:
@@ -16598,21 +17259,19 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_cufft_get_plan_cache_size_ops.h:
 
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/flann/include/opencv2/flann/autotuned_index.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/regular.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/batch_norm_backward_reduce_ops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic.h:
 
-/Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/_standard_gamma_ops.h:
-
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/digamma_native.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/triplet_margin_loss_native.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_includes.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/logit_backward_native.h:
 
@@ -16635,6 +17294,8 @@ CMakeFiles/Kans.dir/main.cpp.o: /Users/quannguyennam/Documents/Projects/KANS/mai
 /Users/quannguyennam/Documents/Anaconda/anaconda3/lib/python3.11/site-packages/torch/include/ATen/ops/log1p.h:
 
 /Users/quannguyennam/Documents/Anaconda/anaconda3/envs/CS330/include/python3.9/tupleobject.h:
+
+/Users/quannguyennam/Documents/Projects/KANS/opencv/modules/core/include/opencv2/core/utility.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/_types/_nl_item.h:
 
