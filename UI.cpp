@@ -2,26 +2,8 @@
 #include <algorithm> 
 namespace plt = matplotlibcpp;
 
-std::string App::vectorToString(std::vector<int64_t>& vec) {
-    std::ostringstream oss;
-    oss << "{";
-    for (size_t i = 0; i < vec.size(); ++i) {
-        oss << vec[i];
-        if (i != vec.size() - 1) {
-            oss << ", ";
-        }
-    }
-    oss << "}";
-    return oss.str();
-}
 
-
-
-
-
-
-
-
+/* INITIALIZE THE UI SYSTEMS*/
 App::App()
     : window(sf::VideoMode(1200, 800), "Kolmogorov-Arnold Model Board"),
       epochs(5),
@@ -29,11 +11,11 @@ App::App()
       currentLoss(0.0),
       modelStructure({784, 64, 10}),
       device(torch::cuda::is_available() ? torch::kCUDA : torch::kCPU),
-      dataPath("/Users/quannguyennam/Documents/Projects/KANS/data/train.csv")  {
+      dataPath("../data/train.csv")  {
+    
+    font.loadFromFile("../arial/ARIALBD.TTF");
 
-    font.loadFromFile("/Users/quannguyennam/Documents/Projects/KANS/arial/ARIALBD.TTF");
-
-    if (!backgroundTexture.loadFromFile("/Users/quannguyennam/Documents/Projects/KANS/background.jpg")) {
+    if (!backgroundTexture.loadFromFile("../background.jpg")) {
         std::cerr << "Failed to load background image." << std::endl;
         return;
     }
@@ -580,81 +562,42 @@ App::App()
 
 
 
-
-
-
-
-
-
-void App::resetParameters() {
-    epochs = 5;
-    currentEpoch = 0;
-    epochText.setString("Epochs:"  + std::to_string(epochs));
-    currentEpochText.setString("Epochs: " + std::to_string(currentEpoch));
-    vectorText.setString("Model Structure:  " + vectorToString(modelStructure));
-    batchText.setString("Batch: 0");
-    currentLoss = 0.0;
-    currentLossText.setString("Current Loss: " + std::to_string(currentLoss));
-    accuracyText.setString("Accuracy: 0.0%");
-    dataProgressText.setString("Data process: 0%");
-    trainingProgressIndicator.setSize(sf::Vector2f(0, 0));
-    trainingProgressText.setString("Training Progress: 0%");
-    
-}
-
-void App::run() {
-    while (window.isOpen()) {
-        processEvents();
-        render();
-    }
-}
-
-void App::handleTextInput(const sf::Event& event) {
-    if (event.type == sf::Event::TextEntered) {
-        if (currentPage == Page::MainMenu) {
-            if (event.text.unicode == '\b' && userStructureInput.getSize() > 0) { 
-                userStructureInput.erase(userStructureInput.getSize() - 1, 1);
-                structureInputText.setString(userStructureInput.toAnsiString());
-            } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
-                userStructureInput += static_cast<char>(event.text.unicode);
-                structureInputText.setString(userStructureInput.toAnsiString());
-            }
+// SFML EVENTS SET UP AND RENDERING
+void App::processEvents() {
+    sf::Event event;
+    while (window.pollEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
         }
-        else if (currentPage == Page::Testing) {
-            if (event.text.unicode == '\b' && userNumImageInput.getSize() > 0) { 
-                userNumImageInput.erase(userNumImageInput.getSize() - 1, 1);
-                numImageInputText.setString(userNumImageInput.toAnsiString() + "|");
-            
-            } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
-                userNumImageInput += static_cast<char>(event.text.unicode);
-                numImageInputText.setString(userNumImageInput.toAnsiString() + "|");
-            }
+        else if (event.type == sf::Event::MouseButtonPressed) {
+            handleButtonClick(sf::Mouse::getPosition(window));
         }
-        else if (currentPage == Page::FunctionTrain) {
-            if (whichInput == 0) {
-                if (event.text.unicode == '\b' && xInput.getSize() > 0) { 
-                    xInput.erase(xInput.getSize() - 1, 1);
-                    xText.setString(xInput.toAnsiString());
-                
-                } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
-                    xInput += static_cast<char>(event.text.unicode);
-                    xText.setString(xInput.toAnsiString());
-                }
-            }
-            else if (whichInput == 1){
-                if (event.text.unicode == '\b' && yInput.getSize() > 0) { 
-                    yInput.erase(yInput.getSize() - 1, 1);
-                    yText.setString(yInput.toAnsiString());
-                
-                } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
-                    yInput += static_cast<char>(event.text.unicode);
-                    yText.setString(yInput.toAnsiString());
-                }
-            }
-            
+        else if (event.type == sf::Event::TextEntered) {
+            handleTextInput(event);
         }
         
     }
+}
+
+void App::render() {
+    window.clear();
+    window.draw(backgroundSprite);
+    switch (currentPage) {
+        case Page::MainMenu:
+            drawMainMenu();
+            break;
+        case Page::Training:
+            drawTrainingPage();
+            break;
+        case Page::Testing:
+            drawTestPage();
+            break;
+        case Page::FunctionTrain:
+            drawFunctionPage();
+            break;
+        
+    }
+    window.display();
 }
 
 void App::handleButtonClick(const sf::Vector2i& mousePosition) {
@@ -751,67 +694,63 @@ void App::handleButtonClick(const sf::Vector2i& mousePosition) {
     }
 }
 
-void App::updateModelStructure() {
-    modelStructure.clear(); 
-
-    std::string inputString = userStructureInput.toAnsiString();
-
-    std::istringstream iss(inputString);
-    std::string token;
-    while (std::getline(iss, token, ',')) {
-        try {
-            int value = std::stoi(token);
-            modelStructure.push_back(value);
-        } catch (const std::invalid_argument& e) {
-            std::cerr << "Invalid input: " << token << std::endl;
-        } catch (const std::out_of_range& e) {
-            std::cerr << "Out of range input: " << token << std::endl;
+void App::handleTextInput(const sf::Event& event) {
+    if (event.type == sf::Event::TextEntered) {
+        if (currentPage == Page::MainMenu) {
+            if (event.text.unicode == '\b' && userStructureInput.getSize() > 0) { 
+                userStructureInput.erase(userStructureInput.getSize() - 1, 1);
+                structureInputText.setString(userStructureInput.toAnsiString());
+            } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
+                userStructureInput += static_cast<char>(event.text.unicode);
+                structureInputText.setString(userStructureInput.toAnsiString());
+            }
         }
-    }
-    structureInputText.setString("Structure Input");
-    vectorText.setString("Model Structure:  " + vectorToString(modelStructure));
-    userStructureInput.clear();
-}
-
-void App::processEvents() {
-    sf::Event event;
-    while (window.pollEvent(event)) {
-        if (event.type == sf::Event::Closed) {
-            window.close();
+        else if (currentPage == Page::Testing) {
+            if (event.text.unicode == '\b' && userNumImageInput.getSize() > 0) { 
+                userNumImageInput.erase(userNumImageInput.getSize() - 1, 1);
+                numImageInputText.setString(userNumImageInput.toAnsiString() + "|");
+            
+            } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
+                userNumImageInput += static_cast<char>(event.text.unicode);
+                numImageInputText.setString(userNumImageInput.toAnsiString() + "|");
+            }
         }
-        else if (event.type == sf::Event::MouseButtonPressed) {
-            handleButtonClick(sf::Mouse::getPosition(window));
-        }
-        else if (event.type == sf::Event::TextEntered) {
-            handleTextInput(event);
+        else if (currentPage == Page::FunctionTrain) {
+            if (whichInput == 0) {
+                if (event.text.unicode == '\b' && xInput.getSize() > 0) { 
+                    xInput.erase(xInput.getSize() - 1, 1);
+                    xText.setString(xInput.toAnsiString());
+                
+                } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
+                    xInput += static_cast<char>(event.text.unicode);
+                    xText.setString(xInput.toAnsiString());
+                }
+            }
+            else if (whichInput == 1){
+                if (event.text.unicode == '\b' && yInput.getSize() > 0) { 
+                    yInput.erase(yInput.getSize() - 1, 1);
+                    yText.setString(yInput.toAnsiString());
+                
+                } else if (event.text.unicode >= 32 && event.text.unicode <= 126) { 
+                    yInput += static_cast<char>(event.text.unicode);
+                    yText.setString(yInput.toAnsiString());
+                }
+            }
+            
         }
         
     }
 }
 
-void App::render() {
-    window.clear();
-    window.draw(backgroundSprite);
-    switch (currentPage) {
-        case Page::MainMenu:
-            drawMainMenu();
-            break;
-        case Page::Training:
-            drawTrainingPage();
-            break;
-        case Page::Testing:
-            drawTestPage();
-            break;
-        case Page::FunctionTrain:
-            drawFunctionPage();
-            break;
-        
+void App::run() {
+    while (window.isOpen()) {
+        processEvents();
+        render();
     }
-    window.display();
 }
 
 
-
+// PAGE DRAWING FUNCTIONS:
 void App::drawMainMenu() {
     // Draw background and UI elements
     window.draw(title);
@@ -903,7 +842,6 @@ void App::drawTestPage() {
     
 }
 
-
 void App::drawFunctionPage() {
     window.draw(functionText);
     window.draw(changeFuntionButton);
@@ -931,6 +869,47 @@ void App::drawFunctionPage() {
 }
 
 
+// MAIN MENU FUNTIONS
+void App::updateModelStructure() {
+    modelStructure.clear(); 
+
+    std::string inputString = userStructureInput.toAnsiString();
+
+    std::istringstream iss(inputString);
+    std::string token;
+    while (std::getline(iss, token, ',')) {
+        try {
+            int value = std::stoi(token);
+            modelStructure.push_back(value);
+        } catch (const std::invalid_argument& e) {
+            std::cerr << "Invalid input: " << token << std::endl;
+        } catch (const std::out_of_range& e) {
+            std::cerr << "Out of range input: " << token << std::endl;
+        }
+    }
+    structureInputText.setString("Structure Input");
+    vectorText.setString("Model Structure:  " + vectorToString(modelStructure));
+    userStructureInput.clear();
+}
+
+void App::resetParameters() {
+    epochs = 5;
+    currentEpoch = 0;
+    epochText.setString("Epochs:"  + std::to_string(epochs));
+    currentEpochText.setString("Epochs: " + std::to_string(currentEpoch));
+    vectorText.setString("Model Structure:  " + vectorToString(modelStructure));
+    batchText.setString("Batch: 0");
+    currentLoss = 0.0;
+    currentLossText.setString("Current Loss: " + std::to_string(currentLoss));
+    accuracyText.setString("Accuracy: 0.0%");
+    dataProgressText.setString("Data process: 0%");
+    trainingProgressIndicator.setSize(sf::Vector2f(0, 0));
+    trainingProgressText.setString("Training Progress: 0%");
+    
+}
+
+
+// TRAIN PAGE FUNCTIONS:
 
 sf::Image App::tensorToSFMLImage(const torch::Tensor& tensor, int scaleFactor) {
     auto img_tensor = tensor.cpu().detach();
@@ -966,7 +945,6 @@ sf::Image App::matToSFImage(const cv::Mat& mat) {
     image.create(rgbMat.cols, rgbMat.rows, rgbMat.ptr());
     return image;
 }
-
 
 void App::trainModel() {
     render();
@@ -1079,13 +1057,14 @@ void App::trainModel() {
     std::cout << "Test Loss: " << test_loss / test_batches.size() << std::endl;
     std::cout << "Test Accuracy: " << static_cast<double>(correct) / total * 100.0 << "%" << std::endl;
     accuracyText.setString("Accuracy: " + std::to_string(static_cast<double>(correct) / total * 100.0) + "%");
-    torch::save(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KAN.pt");
+    torch::save(kan, "../model/KAN.pt");
     render();
 }
 
+// TEST PAGE FUNCTIONS
 void App::testModel() {
     KAN kan(modelStructure);
-    torch::load(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KAN.pt");
+    torch::load(kan, "../model/KAN.pt");
     kan->to(device);
     kan->eval();
     
@@ -1106,18 +1085,15 @@ void App::testModel() {
     render();
 }
 
-
 std::string App::handleFilePath(sf::String number) {
     auto string = number.toAnsiString();
     std::string file_path = "image_" + string + ".png";
     return file_path;
 }
 
-
-
 void App::saveImageToFolder(const torch::Tensor& tensor, const std::string& filename) {
     sf::Image sfImage = tensorToSFMLImage(tensor[0].cpu(), 1);
-    std::string filepath = "/Users/quannguyennam/Documents/Projects/KANS/testImage/" + filename;
+    std::string filepath = "../testImage/" + filename;
     if (!sfImage.saveToFile(filepath)) {
         std::cout << "Failed to save image to " << filepath << std::endl;
     } else {
@@ -1126,7 +1102,7 @@ void App::saveImageToFolder(const torch::Tensor& tensor, const std::string& file
 }
 
 torch::Tensor App::loadImageFromFolder(const std::string& filename) {
-    std::string filepath = "/Users/quannguyennam/Documents/Projects/KANS/testImage/" + filename;
+    std::string filepath = "../testImage/" + filename;
     cv::Mat cvImage = cv::imread(filepath, cv::IMREAD_GRAYSCALE); 
     if (cvImage.empty()) {
         std::cerr << "Failed to load image from " << filepath << std::endl;
@@ -1144,6 +1120,7 @@ torch::Tensor App::loadImageFromFolder(const std::string& filename) {
 
 
 
+// FUNCTION PAGE FUNCTIONS:
 std::vector<std::pair<std::vector<float>, std::vector<float>>> App::get_positions(const std::vector<int>& structure, const float initial_spacing = 1.25, const float spacing_increment = 0.35) {
     std::vector<std::pair<std::vector<float>, std::vector<float>>> positions;
     std::vector<float> y_offsets;
@@ -1167,7 +1144,6 @@ std::vector<std::pair<std::vector<float>, std::vector<float>>> App::get_position
     
     return positions;
 }
-
 
 void App::draw_square(float x, float y, float size, const std::vector<float>& vector) {
     std::vector<double> square_x = {x - size / 2, x + size / 2, x + size / 2, x - size / 2, x - size / 2};
@@ -1198,8 +1174,6 @@ void App::draw_square(float x, float y, float size, const std::vector<float>& ve
     }
 }
 
-
-
 std::vector<std::vector<std::vector<float>>> App::getModelGrid(KAN& kans) {
     /* (LAYERS, LAYERS NODES NUMBER , GRID SIZE AFTER CALCULATIONS) */
     std::vector<torch::Tensor> spline_vectors;
@@ -1217,7 +1191,6 @@ std::vector<std::vector<std::vector<float>>> App::getModelGrid(KAN& kans) {
     
     return batch_vectors;
 }
-
 
 void App::trainFunction() {
     std::vector<int> structure = {1, 5, 5, 10, 2};
@@ -1264,7 +1237,7 @@ void App::trainFunction() {
         };
         optimizer.step(closure);
 
-        std::string filename = "trainImages/epoch_" + std::to_string(i + 1) + ".png";
+        std::string filename = "../build/trainImages/epoch_" + std::to_string(i + 1) + ".png";
         plotModel(structure, kan, filename);
 
         if (!modelStructureTexture.loadFromFile(filename)) {
@@ -1290,17 +1263,17 @@ void App::trainFunction() {
 
     int numFrames = epoch; 
     double fps = 20.0; 
-    std::string outputVideoPath = "training_visualization.avi";
+    std::string outputVideoPath = "../build/training_visualization.avi";
     createAVIVideoFromImages(outputVideoPath, numFrames, fps);
 
-    torch::save(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KANFUNCTION.pt");
+    torch::save(kan, "../model/KANFUNCTION.pt");
 }
 
 void App::predictFunction(float x, float y) {
     std::vector<int64_t> model_structure = {2, 5, 1}; 
 
     KAN kan(model_structure);
-    torch::load(kan, "/Users/quannguyennam/Documents/Projects/KANS/model/KANFUNCTION.pt");
+    torch::load(kan, "../model/KANFUNCTION.pt");
     kan->to(device); 
     kan->eval();
     
@@ -1335,7 +1308,6 @@ void App::predictFunction(float x, float y) {
     functionPredictionText.setString("Prediction: " + std::to_string(output.item<float>()));
     functionRealResultText.setString("Real Result: " + std::to_string(computed_result.item<float>()));
 }
-
 
 void App::plotModel(const std::vector<int>& structure, KAN& kan, const std::string& filename) {
     auto positions = get_positions(structure);
@@ -1376,12 +1348,11 @@ std::vector<float> App::tensorToVector(const torch::Tensor& tensor) {
     return vec;
 }
 
-
 void App::createAVIVideoFromImages(const std::string& outputVideoPath, int numFrames, double fps) {
     std::vector<cv::Mat> frames;
     
     for (int i = 0; i < numFrames; ++i) {
-        std::string filename = "trainImages/epoch_" + std::to_string(i + 1) + ".png";
+        std::string filename = "../build/trainImages/epoch_" + std::to_string(i + 1) + ".png";
         cv::Mat frame = cv::imread(filename);
         if (frame.empty()) {
             std::cerr << "Could not read image: " << filename << std::endl;
@@ -1407,12 +1378,11 @@ void App::createAVIVideoFromImages(const std::string& outputVideoPath, int numFr
     std::cout << "Video saved as " << outputVideoPath << std::endl;
 }
 
-
 void App::createMP4VideoFromImages(const std::string& outputVideoPath, int numFrames, double fps) {
     std::vector<cv::Mat> frames;
     
     for (int i = 0; i < numFrames; ++i) {
-        std::string filename = "/Users/quannguyennam/Documents/Projects/KANS/trainImages/epoch_" + std::to_string(i + 1) + ".png";
+        std::string filename = "../build/trainImages/epoch_" + std::to_string(i + 1) + ".png";
         cv::Mat frame = cv::imread(filename);
         if (frame.empty()) {
             std::cerr << "Could not read image: " << filename << std::endl;
@@ -1458,4 +1428,18 @@ float App::convertTextToFloat(const sf::Text& text) {
         std::cerr << "Out of range: " << e.what() << std::endl;
         return 0.0;
     }
+}
+
+
+std::string App::vectorToString(std::vector<int64_t>& vec) {
+    std::ostringstream oss;
+    oss << "{";
+    for (size_t i = 0; i < vec.size(); ++i) {
+        oss << vec[i];
+        if (i != vec.size() - 1) {
+            oss << ", ";
+        }
+    }
+    oss << "}";
+    return oss.str();
 }

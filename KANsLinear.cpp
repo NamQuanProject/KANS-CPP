@@ -66,6 +66,16 @@ torch::Tensor KANLinearImpl::b_splines(torch::Tensor x) {
 
     auto bases = ((x >= grid_t.slice(1, 0, -1)) & (x < grid_t.slice(1, 1))).to(x.dtype());
 
+    /*
+    N_{i,k}(x) = ((x - t_i) / (t_{i+k} - t_i)) * N_{i,k-1}(x) 
+                + ((t_{i+k+1} - x) / (t_{i+k+1} - t_{i+1})) * N_{i+1,k-1}(x)
+
+    Where:
+    - N_{i,k}(x) is the B-spline basis function of degree k.
+    - t_i are the knots (grid points).
+    - x is the input value.
+    - The formula recursively combines the lower-order basis functions to build the higher-order B-spline.
+    */
     for (int k = 1; k <= spline_order; k++) {
         bases = (x - grid_t.slice(1, 0, -(k + 1))) / (grid_t.slice(1, k, -1) - grid_t.slice(1, 0, -(k + 1))) * bases.slice(2, 0, -1) +
                 (grid_t.slice(1, k + 1) - x) / (grid_t.slice(1, k + 1) - grid_t.slice(1, 1, -k)) * bases.slice(2, 1);
@@ -122,6 +132,7 @@ torch::Tensor KANLinearImpl::forward(torch::Tensor x) {
 }
 
 void KANLinearImpl::update_grid(torch::Tensor x, double margin) {
+    // GRID EXTENSION METHODS
     assert(x.dim() == 2 && x.size(1) == in_features);
     int64_t batch = x.size(0);
 
@@ -131,6 +142,7 @@ void KANLinearImpl::update_grid(torch::Tensor x, double margin) {
     auto orig_coeff = scaled_spline_weight();  
     orig_coeff = orig_coeff.permute({1, 2, 0});  
 
+    // CALCULATE THE BATCH MULTIPLICATION
     auto unreduced_spline_output = torch::bmm(splines, orig_coeff);  
     unreduced_spline_output = unreduced_spline_output.permute({1, 0, 2});
 
@@ -139,7 +151,9 @@ void KANLinearImpl::update_grid(torch::Tensor x, double margin) {
     
     auto indices = torch::linspace(0, batch - 1, grid_size + 1, torch::TensorOptions().dtype(torch::kLong).device(x.device()));
 
+    // Adaptive Grid Computation: 
     auto grid_adaptive = x_sorted.index_select(0, indices);
+    // Uniform Grid Creation:
     auto uniform_step = (x_sorted[-1] - x_sorted[0] + 2 * margin) / grid_size;
     auto grid_uniform = torch::arange(grid_size + 1, torch::TensorOptions().dtype(torch::kFloat32).device(x.device()))
                         .unsqueeze(1)
@@ -160,6 +174,7 @@ void KANLinearImpl::update_grid(torch::Tensor x, double margin) {
     auto coeff = curve2coeff(x, unreduced_spline_output);
     spline_weight.data().copy_(coeff);
 }
+
 
 
 

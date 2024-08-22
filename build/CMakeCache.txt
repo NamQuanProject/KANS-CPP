@@ -231,6 +231,9 @@ Kans_SOURCE_DIR:STATIC=/Users/quannguyennam/Documents/Projects/KANS
 //The directory containing a CMake configuration file for MKL.
 MKL_DIR:PATH=MKL_DIR-NOTFOUND
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for SFML.
 SFML_DIR:PATH=/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build
 

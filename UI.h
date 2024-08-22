@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <torch/torch.h>
+#include <filesystem>
 #include <opencv2/opencv.hpp>
 #include <unordered_map>
 #include "dataset.h"
@@ -193,7 +194,6 @@ public:
     
 
     float convertTextToFloat(const sf::Text& text);
-
     
     void saveImageToFolder(const torch::Tensor& tensor, const std::string& filename);
     torch::Tensor loadImageFromFolder(const std::string& filename);
@@ -213,6 +213,4 @@ public:
     std::vector<std::pair<torch::Tensor, torch::Tensor>> test_batches;
     std::string vectorToString(std::vector<int64_t>& vec);
     std::vector<torch::Tensor> grid_vectors;
-    
-
 };

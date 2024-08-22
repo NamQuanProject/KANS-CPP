@@ -12,7 +12,7 @@
 
 int main() {
     App app;
-    std::cout << "Current path is " << std::filesystem::current_path() << std::endl;
+    
     app.run();
     return 0;
 }

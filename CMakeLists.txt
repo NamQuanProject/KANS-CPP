@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.17 FATAL_ERROR)
 project(Kans)
 
 # Set paths for OpenCV, SFML, and matplotlib-cpp
+
 set(CMAKE_CXX_STANDARD 14)
 set(OpenCV_DIR /Users/quannguyennam/Documents/Projects/KANS/opencv/build)
 set(SFML_ROOT "/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build")
